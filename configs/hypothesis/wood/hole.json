@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with knot or insect",
+    "Visual pattern suggesting hole in wood surface",
+    "Localized deviation from normal wood appearance"
+  ],
+  "failure_mechanism": "knot or insect",
+  "mechanism_explanation": "Natural wood knots or insect boring creates holes in the surface.",
+  "defect_region": "on the wood surface",
+  "defect_bbox_normalized": [
+    0.085,
+    0.079,
+    0.909,
+    0.856
+  ],
+  "severity": "moderate",
+  "severity_visual_description": "moderate hole in wood surface visible under inspection lighting",
+  "defect_class_token": "wood_hole_moderate",
+  "confidence": 0.81,
+  "corrective_action": "Improve raw material inspection and storage conditions.",
+  "counterfactual_prediction": "After correction, the hole in wood surface would be absent and surface appears normal.",
+  "_meta": {
+    "category": "wood",
+    "defect_type": "hole",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

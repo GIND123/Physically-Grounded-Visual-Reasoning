@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with molding or tufting fault",
+    "Visual pattern suggesting visible manufacturing defect",
+    "Localized deviation from normal toothbrush appearance"
+  ],
+  "failure_mechanism": "molding or tufting fault",
+  "mechanism_explanation": "Injection molding or bristle tufting process malfunction.",
+  "defect_region": "on the toothbrush head or handle",
+  "defect_bbox_normalized": [
+    0.187,
+    0.168,
+    0.85,
+    0.837
+  ],
+  "severity": "moderate",
+  "severity_visual_description": "moderate visible manufacturing defect visible under inspection lighting",
+  "defect_class_token": "toothbrush_defective_moderate",
+  "confidence": 0.78,
+  "corrective_action": "Inspect mold cavities and adjust injection parameters.",
+  "counterfactual_prediction": "After correction, the visible manufacturing defect would be absent and surface appears normal.",
+  "_meta": {
+    "category": "toothbrush",
+    "defect_type": "defective",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

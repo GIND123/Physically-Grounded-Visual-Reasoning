@@ -1,0 +1,34 @@
+{
+  "observed_anomaly_cues": [
+    "visible linear marks",
+    "irregular surface texture"
+  ],
+  "failure_mechanism": "Tool wear leading to surface abrasion.",
+  "mechanism_explanation": "As the threading tools wear out, they lose their sharpness, increasing friction and causing scratches on the metal surface. Steel's hardness can exacerbate this effect if the tools are not regularly maintained, leading to more pronounced surface defects.",
+  "defect_region": "outer surface of the nut",
+  "defect_bbox_normalized": [
+    0.2,
+    0.2,
+    0.8,
+    0.8
+  ],
+  "severity": "moderate",
+  "severity_visual_description": "Scratches are visible to the naked eye and may affect the aesthetic quality.",
+  "defect_class_token": "scratch_defect",
+  "confidence": 0.85,
+  "corrective_action": "Inspect and replace worn tools, and ensure regular cleaning to remove debris.",
+  "counterfactual_prediction": "Surface appears smooth and free of linear marks.",
+  "_meta": {
+    "category": "metal_nut",
+    "defect_type": "scratch",
+    "reference_image": "/content/drive/MyDrive/Papers/Industrial/datasets/mvtec_ad/metal_nut/train/good/000.png",
+    "process_context": {
+      "tool_hours_since_replacement": 312,
+      "tool_wear_pct": 53.0,
+      "line_speed_pct": 94.4,
+      "ambient_humidity_pct": 39.5,
+      "ambient_temp_C": 21.7
+    },
+    "timestamp": "2026-04-03T03:36:37Z"
+  }
+}

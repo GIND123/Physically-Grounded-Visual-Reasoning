@@ -1,0 +1,32 @@
+{
+  "observed_anomaly_cues": [
+    "misaligned threads",
+    "inconsistent thread depth"
+  ],
+  "failure_mechanism": "Incorrect orientation during threading process.",
+  "mechanism_explanation": "The threading process relies on the correct orientation of the nut to ensure threads are cut properly. If the nut is flipped, the threads may not align with the intended design, leading to defects. This misalignment can occur due to improper feeding or handling in the threading machine.",
+  "defect_region": "threaded area of the nut",
+  "defect_bbox_normalized": [
+    0.2,
+    0.2,
+    0.8,
+    0.8
+  ],
+  "severity": "moderate",
+  "severity_visual_description": "Threads appear uneven and may not fit properly with mating parts.",
+  "defect_class_token": "flip_defect",
+  "confidence": 0.85,
+  "corrective_action": "Implement automated vision systems to ensure correct orientation before threading.",
+  "counterfactual_prediction": "Threads appear aligned and consistent, fitting properly with mating parts.",
+  "_meta": {
+    "category": "metal_nut",
+    "defect_type": "flip",
+    "reference_image": "/content/drive/MyDrive/Papers/Industrial/datasets/mvtec_ad/metal_nut/train/good/000.png",
+    "process_context": {
+      "line_speed_pct": 110.0,
+      "ambient_humidity_pct": 50.6,
+      "ambient_temp_C": 22.2
+    },
+    "timestamp": "2026-04-03T03:36:31Z"
+  }
+}

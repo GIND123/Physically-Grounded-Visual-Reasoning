@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with mechanical puncture",
+    "Visual pattern suggesting small hole in capsule wall",
+    "Localized deviation from normal capsule appearance"
+  ],
+  "failure_mechanism": "mechanical puncture",
+  "mechanism_explanation": "Process deviation causes small hole in capsule wall.",
+  "defect_region": "on the capsule surface",
+  "defect_bbox_normalized": [
+    0.236,
+    0.104,
+    0.731,
+    0.829
+  ],
+  "severity": "critical",
+  "severity_visual_description": "critical small hole in capsule wall visible under inspection lighting",
+  "defect_class_token": "capsule_poke_critical",
+  "confidence": 0.87,
+  "corrective_action": "Review process parameters and adjust to specification.",
+  "counterfactual_prediction": "After correction, the small hole in capsule wall would be absent and surface appears normal.",
+  "_meta": {
+    "category": "capsule",
+    "defect_type": "poke",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

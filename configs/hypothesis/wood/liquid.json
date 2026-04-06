@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with spill contamination",
+    "Visual pattern suggesting liquid stain",
+    "Localized deviation from normal wood appearance"
+  ],
+  "failure_mechanism": "spill contamination",
+  "mechanism_explanation": "Liquid spill during processing leaves visible residue.",
+  "defect_region": "on the wood surface",
+  "defect_bbox_normalized": [
+    0.126,
+    0.099,
+    0.935,
+    0.932
+  ],
+  "severity": "moderate",
+  "severity_visual_description": "moderate liquid stain visible under inspection lighting",
+  "defect_class_token": "wood_liquid_moderate",
+  "confidence": 0.94,
+  "corrective_action": "Add drip guards and implement immediate cleanup protocol.",
+  "counterfactual_prediction": "After correction, the liquid stain would be absent and surface appears normal.",
+  "_meta": {
+    "category": "wood",
+    "defect_type": "liquid",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

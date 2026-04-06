@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with intentional damage",
+    "Visual pattern suggesting damaged screw head front",
+    "Localized deviation from normal screw appearance"
+  ],
+  "failure_mechanism": "intentional damage",
+  "mechanism_explanation": "Deliberate manipulation alters the component's intended form.",
+  "defect_region": "on the screw body",
+  "defect_bbox_normalized": [
+    0.261,
+    0.083,
+    0.761,
+    0.947
+  ],
+  "severity": "critical",
+  "severity_visual_description": "critical damaged screw head front visible under inspection lighting",
+  "defect_class_token": "screw_manipulated_front_critical",
+  "confidence": 0.82,
+  "corrective_action": "Investigate root cause and implement tamper detection.",
+  "counterfactual_prediction": "After correction, the damaged screw head front would be absent and surface appears normal.",
+  "_meta": {
+    "category": "screw",
+    "defect_type": "manipulated_front",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

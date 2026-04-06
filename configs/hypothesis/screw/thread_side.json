@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with forming defect",
+    "Visual pattern suggesting thread damage on side",
+    "Localized deviation from normal screw appearance"
+  ],
+  "failure_mechanism": "forming defect",
+  "mechanism_explanation": "Metal forming process error creates irregularities in the thread profile.",
+  "defect_region": "on the screw body",
+  "defect_bbox_normalized": [
+    0.246,
+    0.128,
+    0.735,
+    0.906
+  ],
+  "severity": "critical",
+  "severity_visual_description": "critical thread damage on side visible under inspection lighting",
+  "defect_class_token": "screw_thread_side_critical",
+  "confidence": 0.76,
+  "corrective_action": "Replace thread rolling dies and adjust forming speed.",
+  "counterfactual_prediction": "After correction, the thread damage on side would be absent and surface appears normal.",
+  "_meta": {
+    "category": "screw",
+    "defect_type": "thread_side",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

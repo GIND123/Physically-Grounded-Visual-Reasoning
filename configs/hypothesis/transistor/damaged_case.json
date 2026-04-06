@@ -1,0 +1,35 @@
+{
+  "observed_anomaly_cues": [
+    "cracks on the case surface",
+    "chips along the edges",
+    "irregular surface texture"
+  ],
+  "failure_mechanism": "Excessive mold pressure during case formation.",
+  "mechanism_explanation": "The application of pressure above the recommended 100 MPa during the molding process can lead to stress concentrations in the epoxy material. This stress can exceed the material's tensile strength, resulting in cracks or chips. Additionally, inconsistent epoxy viscosity can exacerbate this issue by causing uneven pressure distribution.",
+  "defect_region": "surface of the transistor case",
+  "defect_bbox_normalized": [
+    0.2,
+    0.3,
+    0.8,
+    0.7
+  ],
+  "severity": "critical",
+  "severity_visual_description": "Visible cracks and chips that compromise the structural integrity of the case.",
+  "defect_class_token": "damaged_case",
+  "confidence": 0.95,
+  "corrective_action": "Reduce mold pressure to below 100 MPa and ensure consistent epoxy viscosity.",
+  "counterfactual_prediction": "The case surface appears smooth and free of cracks or chips.",
+  "_meta": {
+    "category": "transistor",
+    "defect_type": "damaged_case",
+    "reference_image": "/content/drive/MyDrive/Papers/Industrial/datasets/mvtec_ad/transistor/train/good/000.png",
+    "process_context": {
+      "pressure_MPa": 151.9,
+      "force_N": 4970.3,
+      "line_speed_pct": 86.0,
+      "ambient_humidity_pct": 57.2,
+      "ambient_temp_C": 26.9
+    },
+    "timestamp": "2026-04-03T03:36:52Z"
+  }
+}

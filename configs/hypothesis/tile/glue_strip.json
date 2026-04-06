@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with adhesive contamination",
+    "Visual pattern suggesting glue strip on surface",
+    "Localized deviation from normal tile appearance"
+  ],
+  "failure_mechanism": "adhesive contamination",
+  "mechanism_explanation": "Excess adhesive from a previous process step remains on the surface.",
+  "defect_region": "on the tile surface",
+  "defect_bbox_normalized": [
+    0.134,
+    0.128,
+    0.819,
+    0.8
+  ],
+  "severity": "minor",
+  "severity_visual_description": "minor glue strip on surface visible under inspection lighting",
+  "defect_class_token": "tile_glue_strip_minor",
+  "confidence": 0.94,
+  "corrective_action": "Clean adhesive dispensing nozzles and add wipe station.",
+  "counterfactual_prediction": "After correction, the glue strip on surface would be absent and surface appears normal.",
+  "_meta": {
+    "category": "tile",
+    "defect_type": "glue_strip",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

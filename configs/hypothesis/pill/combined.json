@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with multiple faults",
+    "Visual pattern suggesting multiple defect types present",
+    "Localized deviation from normal pill appearance"
+  ],
+  "failure_mechanism": "multiple faults",
+  "mechanism_explanation": "Combination of multiple process deviations produces compound defects.",
+  "defect_region": "on the pill surface",
+  "defect_bbox_normalized": [
+    0.232,
+    0.241,
+    0.748,
+    0.756
+  ],
+  "severity": "critical",
+  "severity_visual_description": "critical multiple defect types present visible under inspection lighting",
+  "defect_class_token": "pill_combined_critical",
+  "confidence": 0.77,
+  "corrective_action": "Conduct full process audit and address individual root causes.",
+  "counterfactual_prediction": "After correction, the multiple defect types present would be absent and surface appears normal.",
+  "_meta": {
+    "category": "pill",
+    "defect_type": "combined",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

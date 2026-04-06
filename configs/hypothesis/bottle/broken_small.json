@@ -1,0 +1,34 @@
+{
+  "observed_anomaly_cues": [
+    "small fractures",
+    "chips between 1 mm and 5 mm"
+  ],
+  "failure_mechanism": "Inconsistent temperature distribution during molding.",
+  "mechanism_explanation": "Variations in temperature across the mold can create localized stresses in the glass, leading to small cracks or chips. The glass cools unevenly, causing differential contraction and resulting in minor fractures.",
+  "defect_region": "around the neck and body of the bottle",
+  "defect_bbox_normalized": [
+    0.3,
+    0.3,
+    0.7,
+    0.7
+  ],
+  "severity": "minor",
+  "severity_visual_description": "Visible small chips or cracks that do not compromise the structural integrity of the bottle.",
+  "defect_class_token": "broken_small",
+  "confidence": 0.85,
+  "corrective_action": "Implement advanced temperature control systems to ensure uniform mold temperature.",
+  "counterfactual_prediction": "The small fractures and chips will be reduced or eliminated, resulting in a smooth, defect-free surface.",
+  "_meta": {
+    "category": "bottle",
+    "defect_type": "broken_small",
+    "reference_image": "/content/drive/MyDrive/Papers/Industrial/datasets/mvtec_ad/bottle/train/good/000.png",
+    "process_context": {
+      "pressure_MPa": 171.8,
+      "force_N": 7141.7,
+      "line_speed_pct": 69.3,
+      "ambient_humidity_pct": 49.1,
+      "ambient_temp_C": 18.5
+    },
+    "timestamp": "2026-04-03T03:36:13Z"
+  }
+}

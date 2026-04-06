@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with mechanical cut",
+    "Visual pattern suggesting cut in leather surface",
+    "Localized deviation from normal leather appearance"
+  ],
+  "failure_mechanism": "mechanical cut",
+  "mechanism_explanation": "Sharp edge contact during handling or processing severs material fibers.",
+  "defect_region": "on the leather surface",
+  "defect_bbox_normalized": [
+    0.192,
+    0.192,
+    0.892,
+    0.891
+  ],
+  "severity": "critical",
+  "severity_visual_description": "critical cut in leather surface visible under inspection lighting",
+  "defect_class_token": "leather_cut_critical",
+  "confidence": 0.93,
+  "corrective_action": "Replace cutting tools and adjust blade clearance.",
+  "counterfactual_prediction": "After correction, the cut in leather surface would be absent and surface appears normal.",
+  "_meta": {
+    "category": "leather",
+    "defect_type": "cut",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with puncture",
+    "Visual pattern suggesting small hole or puncture",
+    "Localized deviation from normal leather appearance"
+  ],
+  "failure_mechanism": "puncture",
+  "mechanism_explanation": "A sharp object or excessive point force penetrates the material surface.",
+  "defect_region": "on the leather surface",
+  "defect_bbox_normalized": [
+    0.154,
+    0.159,
+    0.867,
+    0.803
+  ],
+  "severity": "moderate",
+  "severity_visual_description": "moderate small hole or puncture visible under inspection lighting",
+  "defect_class_token": "leather_poke_moderate",
+  "confidence": 0.84,
+  "corrective_action": "Install protective barriers and review handling procedures.",
+  "counterfactual_prediction": "After correction, the small hole or puncture would be absent and surface appears normal.",
+  "_meta": {
+    "category": "leather",
+    "defect_type": "poke",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

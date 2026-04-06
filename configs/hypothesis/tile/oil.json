@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with contamination",
+    "Visual pattern suggesting oil stain on surface",
+    "Localized deviation from normal tile appearance"
+  ],
+  "failure_mechanism": "contamination",
+  "mechanism_explanation": "Foreign substance deposited on the surface during processing.",
+  "defect_region": "on the tile surface",
+  "defect_bbox_normalized": [
+    0.104,
+    0.17,
+    0.856,
+    0.835
+  ],
+  "severity": "moderate",
+  "severity_visual_description": "moderate oil stain on surface visible under inspection lighting",
+  "defect_class_token": "tile_oil_moderate",
+  "confidence": 0.79,
+  "corrective_action": "Improve process cleanliness and add inspection checkpoint.",
+  "counterfactual_prediction": "After correction, the oil stain on surface would be absent and surface appears normal.",
+  "_meta": {
+    "category": "tile",
+    "defect_type": "oil",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

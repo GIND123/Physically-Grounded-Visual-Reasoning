@@ -1,0 +1,35 @@
+{
+  "observed_anomaly_cues": [
+    "misalignment of transistor leads",
+    "uneven spacing between leads",
+    "off-center placement on board"
+  ],
+  "failure_mechanism": "misaligned placement tools",
+  "mechanism_explanation": "Misaligned placement tools can cause the transistor to be positioned incorrectly on the circuit board. This misalignment is often due to tool wear or incorrect calibration, leading to deviations from the intended placement position.",
+  "defect_region": "around the leads on the circuit board",
+  "defect_bbox_normalized": [
+    0.3,
+    0.4,
+    0.7,
+    0.8
+  ],
+  "severity": "moderate",
+  "severity_visual_description": "The leads are visibly misaligned but not severely bent or broken.",
+  "defect_class_token": "misplaced_component",
+  "confidence": 0.85,
+  "corrective_action": "calibrate and align placement tools to within 0.01 mm accuracy",
+  "counterfactual_prediction": "transistor leads align correctly with even spacing and centered placement on the board",
+  "_meta": {
+    "category": "transistor",
+    "defect_type": "misplaced",
+    "reference_image": "/content/drive/MyDrive/Papers/Industrial/datasets/mvtec_ad/transistor/train/good/000.png",
+    "process_context": {
+      "pick_place_accuracy_mm": 1.405,
+      "vision_system_enabled": true,
+      "line_speed_pct": 98.5,
+      "ambient_humidity_pct": 43.7,
+      "ambient_temp_C": 22.5
+    },
+    "timestamp": "2026-04-03T03:36:58Z"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "observed_anomaly_cues": [
+    "leads appear shorter than standard",
+    "leads may be completely severed",
+    "irregular lead length"
+  ],
+  "failure_mechanism": "Excessive cutting force due to tool wear or incorrect machine settings.",
+  "mechanism_explanation": "Excessive cutting force can result from dull cutting tools or incorrect machine settings, causing the leads to be cut too short or severed. This is particularly problematic with metal leads, as they require precise cutting to maintain electrical connectivity.",
+  "defect_region": "lead area of the transistor",
+  "defect_bbox_normalized": [
+    0.4,
+    0.7,
+    0.6,
+    0.9
+  ],
+  "severity": "critical",
+  "severity_visual_description": "Leads are visibly too short or missing, leading to potential open circuits.",
+  "defect_class_token": "cut_lead",
+  "confidence": 0.95,
+  "corrective_action": "Recalibrate cutting tools and ensure regular sharpening.",
+  "counterfactual_prediction": "Leads will appear at standard length, with consistent and correct alignment.",
+  "_meta": {
+    "category": "transistor",
+    "defect_type": "cut_lead",
+    "reference_image": "/content/drive/MyDrive/Papers/Industrial/datasets/mvtec_ad/transistor/train/good/000.png",
+    "process_context": {
+      "line_speed_pct": 71.0,
+      "ambient_humidity_pct": 72.5,
+      "ambient_temp_C": 22.2
+    },
+    "timestamp": "2026-04-03T03:36:47Z"
+  }
+}

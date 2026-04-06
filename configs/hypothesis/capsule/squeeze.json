@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with compression",
+    "Visual pattern suggesting deformed capsule shape",
+    "Localized deviation from normal capsule appearance"
+  ],
+  "failure_mechanism": "compression",
+  "mechanism_explanation": "Excessive compressive force deforms the part beyond its elastic limit.",
+  "defect_region": "on the capsule surface",
+  "defect_bbox_normalized": [
+    0.206,
+    0.112,
+    0.765,
+    0.865
+  ],
+  "severity": "moderate",
+  "severity_visual_description": "moderate deformed capsule shape visible under inspection lighting",
+  "defect_class_token": "capsule_squeeze_moderate",
+  "confidence": 0.84,
+  "corrective_action": "Reduce compression force and verify press calibration.",
+  "counterfactual_prediction": "After correction, the deformed capsule shape would be absent and surface appears normal.",
+  "_meta": {
+    "category": "capsule",
+    "defect_type": "squeeze",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

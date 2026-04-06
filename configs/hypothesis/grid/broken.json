@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with fracture",
+    "Visual pattern suggesting broken grid connection",
+    "Localized deviation from normal grid appearance"
+  ],
+  "failure_mechanism": "fracture",
+  "mechanism_explanation": "Stress concentration exceeds the material's ultimate tensile strength.",
+  "defect_region": "on the grid structure",
+  "defect_bbox_normalized": [
+    0.175,
+    0.176,
+    0.83,
+    0.772
+  ],
+  "severity": "critical",
+  "severity_visual_description": "critical broken grid connection visible under inspection lighting",
+  "defect_class_token": "grid_broken_critical",
+  "confidence": 0.8,
+  "corrective_action": "Reduce stress concentration through design modification.",
+  "counterfactual_prediction": "After correction, the broken grid connection would be absent and surface appears normal.",
+  "_meta": {
+    "category": "grid",
+    "defect_type": "broken",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

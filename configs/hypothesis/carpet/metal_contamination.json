@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with foreign material",
+    "Visual pattern suggesting metallic particle embedded",
+    "Localized deviation from normal carpet appearance"
+  ],
+  "failure_mechanism": "foreign material",
+  "mechanism_explanation": "Contamination from external particles introduced during manufacturing or handling.",
+  "defect_region": "on the carpet surface",
+  "defect_bbox_normalized": [
+    0.233,
+    0.196,
+    0.823,
+    0.821
+  ],
+  "severity": "moderate",
+  "severity_visual_description": "moderate metallic particle embedded visible under inspection lighting",
+  "defect_class_token": "carpet_metal_contamination_moderate",
+  "confidence": 0.86,
+  "corrective_action": "Increase cleanroom filtration and add pre-process cleaning step.",
+  "counterfactual_prediction": "After correction, the metallic particle embedded would be absent and surface appears normal.",
+  "_meta": {
+    "category": "carpet",
+    "defect_type": "metal_contamination",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "observed_anomaly_cues": [
+    "discoloration",
+    "uneven color patches"
+  ],
+  "failure_mechanism": "Oxidation due to excessive process temperature.",
+  "mechanism_explanation": "The process temperature exceeded the recommended threshold, leading to oxidation of the steel surface. This oxidation alters the surface appearance, causing discoloration. Proper temperature control is essential to prevent such chemical reactions.",
+  "defect_region": "entire surface of the nut",
+  "defect_bbox_normalized": [
+    0.1,
+    0.1,
+    0.9,
+    0.9
+  ],
+  "severity": "moderate",
+  "severity_visual_description": "Noticeable discoloration that affects the aesthetic quality but not the structural integrity.",
+  "defect_class_token": "color_defect",
+  "confidence": 0.85,
+  "corrective_action": "Reduce process temperature and consider using protective coatings or inert atmospheres.",
+  "counterfactual_prediction": "The nut surface will appear uniform and match the standard color sample.",
+  "_meta": {
+    "category": "metal_nut",
+    "defect_type": "color",
+    "reference_image": "/content/drive/MyDrive/Papers/Industrial/datasets/mvtec_ad/metal_nut/train/good/000.png",
+    "process_context": {
+      "temperature_C": 308.7,
+      "cooling_rate_C_per_min": 22.5,
+      "line_speed_pct": 84.9,
+      "ambient_humidity_pct": 61.6,
+      "ambient_temp_C": 24.3
+    },
+    "timestamp": "2026-04-03T03:36:27Z"
+  }
+}

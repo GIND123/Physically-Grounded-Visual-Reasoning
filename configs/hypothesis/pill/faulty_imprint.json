@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with stamping error",
+    "Visual pattern suggesting missing or blurred imprint",
+    "Localized deviation from normal pill appearance"
+  ],
+  "failure_mechanism": "stamping error",
+  "mechanism_explanation": "Worn or misaligned stamping die produces incomplete impressions.",
+  "defect_region": "on the pill surface",
+  "defect_bbox_normalized": [
+    0.275,
+    0.159,
+    0.719,
+    0.832
+  ],
+  "severity": "moderate",
+  "severity_visual_description": "moderate missing or blurred imprint visible under inspection lighting",
+  "defect_class_token": "pill_faulty_imprint_moderate",
+  "confidence": 0.88,
+  "corrective_action": "Replace worn stamping die and adjust impression depth.",
+  "counterfactual_prediction": "After correction, the missing or blurred imprint would be absent and surface appears normal.",
+  "_meta": {
+    "category": "pill",
+    "defect_type": "faulty_imprint",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

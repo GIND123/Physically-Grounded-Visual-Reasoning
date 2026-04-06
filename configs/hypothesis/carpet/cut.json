@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with mechanical cut",
+    "Visual pattern suggesting cut fibers",
+    "Localized deviation from normal carpet appearance"
+  ],
+  "failure_mechanism": "mechanical cut",
+  "mechanism_explanation": "Sharp edge contact during handling or processing severs material fibers.",
+  "defect_region": "on the carpet surface",
+  "defect_bbox_normalized": [
+    0.162,
+    0.244,
+    0.831,
+    0.827
+  ],
+  "severity": "moderate",
+  "severity_visual_description": "moderate cut fibers visible under inspection lighting",
+  "defect_class_token": "carpet_cut_moderate",
+  "confidence": 0.88,
+  "corrective_action": "Replace cutting tools and adjust blade clearance.",
+  "counterfactual_prediction": "After correction, the cut fibers would be absent and surface appears normal.",
+  "_meta": {
+    "category": "carpet",
+    "defect_type": "cut",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

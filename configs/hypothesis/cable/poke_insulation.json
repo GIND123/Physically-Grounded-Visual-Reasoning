@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with puncture",
+    "Visual pattern suggesting small hole in insulation",
+    "Localized deviation from normal cable appearance"
+  ],
+  "failure_mechanism": "puncture",
+  "mechanism_explanation": "A sharp object or excessive point force penetrates the material surface.",
+  "defect_region": "along the cable body",
+  "defect_bbox_normalized": [
+    0.177,
+    0.165,
+    0.821,
+    0.793
+  ],
+  "severity": "moderate",
+  "severity_visual_description": "moderate small hole in insulation visible under inspection lighting",
+  "defect_class_token": "cable_poke_insulation_moderate",
+  "confidence": 0.8,
+  "corrective_action": "Install protective barriers and review handling procedures.",
+  "counterfactual_prediction": "After correction, the small hole in insulation would be absent and surface appears normal.",
+  "_meta": {
+    "category": "cable",
+    "defect_type": "poke_insulation",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

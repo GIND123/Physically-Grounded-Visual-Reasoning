@@ -1,0 +1,34 @@
+{
+  "observed_anomaly_cues": [
+    "visible foreign particles inside the bottle",
+    "residues on the inner surface"
+  ],
+  "failure_mechanism": "Contaminants introduced during the filling process.",
+  "mechanism_explanation": "The filling process can introduce contaminants if the equipment is not properly cleaned or if the cleanroom environment is compromised. Particles can adhere to the glass surface due to static or moisture, leading to visible contamination.",
+  "defect_region": "inner surface of the bottle",
+  "defect_bbox_normalized": [
+    0.2,
+    0.2,
+    0.8,
+    0.8
+  ],
+  "severity": "critical",
+  "severity_visual_description": "Visible particles or residues that compromise product purity and safety.",
+  "defect_class_token": "contamination",
+  "confidence": 0.95,
+  "corrective_action": "Thoroughly clean and sanitize filling equipment and improve cleanroom filtration.",
+  "counterfactual_prediction": "The inner surface appears clear and free of any visible particles or residues.",
+  "_meta": {
+    "category": "bottle",
+    "defect_type": "contamination",
+    "reference_image": "/content/drive/MyDrive/Papers/Industrial/datasets/mvtec_ad/bottle/train/good/000.png",
+    "process_context": {
+      "cleanroom_particle_count_per_m3": 14828,
+      "filter_change_days_overdue": 7,
+      "line_speed_pct": 90.3,
+      "ambient_humidity_pct": 29.3,
+      "ambient_temp_C": 21.4
+    },
+    "timestamp": "2026-04-03T03:36:18Z"
+  }
+}

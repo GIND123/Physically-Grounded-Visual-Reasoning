@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with mechanical deformation",
+    "Visual pattern suggesting bent grid element",
+    "Localized deviation from normal grid appearance"
+  ],
+  "failure_mechanism": "mechanical deformation",
+  "mechanism_explanation": "Force applied exceeds the material's elastic limit, causing permanent shape change.",
+  "defect_region": "on the grid structure",
+  "defect_bbox_normalized": [
+    0.168,
+    0.238,
+    0.796,
+    0.821
+  ],
+  "severity": "moderate",
+  "severity_visual_description": "moderate bent grid element visible under inspection lighting",
+  "defect_class_token": "grid_bent_moderate",
+  "confidence": 0.91,
+  "corrective_action": "Reduce forming pressure and verify die alignment.",
+  "counterfactual_prediction": "After correction, the bent grid element would be absent and surface appears normal.",
+  "_meta": {
+    "category": "grid",
+    "defect_type": "bent",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

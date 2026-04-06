@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with mechanical damage",
+    "Visual pattern suggesting cut mark on surface",
+    "Localized deviation from normal hazelnut appearance"
+  ],
+  "failure_mechanism": "mechanical damage",
+  "mechanism_explanation": "Impact or pressure during handling causes physical damage to the component.",
+  "defect_region": "on the nut surface",
+  "defect_bbox_normalized": [
+    0.199,
+    0.154,
+    0.764,
+    0.757
+  ],
+  "severity": "moderate",
+  "severity_visual_description": "moderate cut mark on surface visible under inspection lighting",
+  "defect_class_token": "hazelnut_cut_moderate",
+  "confidence": 0.93,
+  "corrective_action": "Add protective packaging and reduce handling steps.",
+  "counterfactual_prediction": "After correction, the cut mark on surface would be absent and surface appears normal.",
+  "_meta": {
+    "category": "hazelnut",
+    "defect_type": "cut",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

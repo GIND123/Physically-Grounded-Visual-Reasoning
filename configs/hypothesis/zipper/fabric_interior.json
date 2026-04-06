@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with weaving fault",
+    "Visual pattern suggesting fabric interior defect",
+    "Localized deviation from normal zipper appearance"
+  ],
+  "failure_mechanism": "weaving fault",
+  "mechanism_explanation": "Loom malfunction or thread tension error during the weaving process.",
+  "defect_region": "along the zipper teeth or fabric",
+  "defect_bbox_normalized": [
+    0.176,
+    0.143,
+    0.826,
+    0.907
+  ],
+  "severity": "moderate",
+  "severity_visual_description": "moderate fabric interior defect visible under inspection lighting",
+  "defect_class_token": "zipper_fabric_interior_moderate",
+  "confidence": 0.83,
+  "corrective_action": "Recalibrate loom and replace worn thread guides.",
+  "counterfactual_prediction": "After correction, the fabric interior defect would be absent and surface appears normal.",
+  "_meta": {
+    "category": "zipper",
+    "defect_type": "fabric_interior",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "observed_anomaly_cues": [
+    "large visible cracks exceeding 5 mm",
+    "irregular surface texture",
+    "discoloration near the crack"
+  ],
+  "failure_mechanism": "Excessive cooling rate causing thermal stress.",
+  "mechanism_explanation": "Rapid cooling from a high temperature can induce significant thermal gradients in the glass, leading to stress concentrations. These stresses exceed the material's tensile strength, resulting in large cracks.",
+  "defect_region": "midsection of the bottle",
+  "defect_bbox_normalized": [
+    0.3,
+    0.4,
+    0.7,
+    0.6
+  ],
+  "severity": "critical",
+  "severity_visual_description": "The defect manifests as large, prominent cracks that compromise structural integrity.",
+  "defect_class_token": "broken_large",
+  "confidence": 0.9,
+  "corrective_action": "Reduce the cooling rate to allow for gradual temperature decrease.",
+  "counterfactual_prediction": "The large cracks will be absent, and the surface will appear smooth and uniform.",
+  "_meta": {
+    "category": "bottle",
+    "defect_type": "broken_large",
+    "reference_image": "/content/drive/MyDrive/Papers/Industrial/datasets/mvtec_ad/bottle/train/good/000.png",
+    "process_context": {
+      "temperature_C": 297.1,
+      "cooling_rate_C_per_min": 4.7,
+      "line_speed_pct": 78.8,
+      "ambient_humidity_pct": 39.2,
+      "ambient_temp_C": 30.5
+    },
+    "timestamp": "2026-04-03T03:36:07Z"
+  }
+}

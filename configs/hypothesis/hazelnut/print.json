@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with surface marking",
+    "Visual pattern suggesting printed mark or stain",
+    "Localized deviation from normal hazelnut appearance"
+  ],
+  "failure_mechanism": "surface marking",
+  "mechanism_explanation": "Unintended marking from contact with contaminated surfaces.",
+  "defect_region": "on the nut surface",
+  "defect_bbox_normalized": [
+    0.19,
+    0.219,
+    0.824,
+    0.848
+  ],
+  "severity": "minor",
+  "severity_visual_description": "minor printed mark or stain visible under inspection lighting",
+  "defect_class_token": "hazelnut_print_minor",
+  "confidence": 0.91,
+  "corrective_action": "Clean contact surfaces and add protective film.",
+  "counterfactual_prediction": "After correction, the printed mark or stain would be absent and surface appears normal.",
+  "_meta": {
+    "category": "hazelnut",
+    "defect_type": "print",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

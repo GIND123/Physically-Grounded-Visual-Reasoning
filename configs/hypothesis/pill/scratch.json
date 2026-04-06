@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with surface abrasion",
+    "Visual pattern suggesting scratch on coating",
+    "Localized deviation from normal pill appearance"
+  ],
+  "failure_mechanism": "surface abrasion",
+  "mechanism_explanation": "Friction against a harder surface removes material, creating visible marks.",
+  "defect_region": "on the pill surface",
+  "defect_bbox_normalized": [
+    0.242,
+    0.16,
+    0.778,
+    0.751
+  ],
+  "severity": "minor",
+  "severity_visual_description": "minor scratch on coating visible under inspection lighting",
+  "defect_class_token": "pill_scratch_minor",
+  "confidence": 0.77,
+  "corrective_action": "Add protective padding and reduce surface contact speed.",
+  "counterfactual_prediction": "After correction, the scratch on coating would be absent and surface appears normal.",
+  "_meta": {
+    "category": "pill",
+    "defect_type": "scratch",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

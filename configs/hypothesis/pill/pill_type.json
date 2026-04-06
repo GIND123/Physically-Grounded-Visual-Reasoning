@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with sorting error",
+    "Visual pattern suggesting wrong pill type",
+    "Localized deviation from normal pill appearance"
+  ],
+  "failure_mechanism": "sorting error",
+  "mechanism_explanation": "Automated sorting system misclassifies or misroutes components.",
+  "defect_region": "on the pill surface",
+  "defect_bbox_normalized": [
+    0.216,
+    0.195,
+    0.728,
+    0.779
+  ],
+  "severity": "critical",
+  "severity_visual_description": "critical wrong pill type visible under inspection lighting",
+  "defect_class_token": "pill_pill_type_critical",
+  "confidence": 0.8,
+  "corrective_action": "Recalibrate sorting sensors and update classification thresholds.",
+  "counterfactual_prediction": "After correction, the wrong pill type would be absent and surface appears normal.",
+  "_meta": {
+    "category": "pill",
+    "defect_type": "pill_type",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "observed_anomaly_cues": [
+    "visible deformation",
+    "misalignment with reference profile"
+  ],
+  "failure_mechanism": "excessive pressure during cold heading",
+  "mechanism_explanation": "Excessive pressure can cause the steel to deform beyond its elastic limit, resulting in a bent shape. The material is unable to return to its original form, leading to permanent deformation. Misalignment of the die exacerbates this issue by not guiding the material correctly.",
+  "defect_region": "outer edge of the nut",
+  "defect_bbox_normalized": [
+    0.2,
+    0.2,
+    0.8,
+    0.8
+  ],
+  "severity": "moderate",
+  "severity_visual_description": "noticeable bending that affects fit and function",
+  "defect_class_token": "bent_defect",
+  "confidence": 0.85,
+  "corrective_action": "calibrate equipment and ensure proper die alignment",
+  "counterfactual_prediction": "the nut aligns correctly with the reference profile, showing no visible deformation",
+  "_meta": {
+    "category": "metal_nut",
+    "defect_type": "bent",
+    "reference_image": "/content/drive/MyDrive/Papers/Industrial/datasets/mvtec_ad/metal_nut/train/good/000.png",
+    "process_context": {
+      "pressure_MPa": 135.7,
+      "force_N": 4868.5,
+      "line_speed_pct": 113.2,
+      "ambient_humidity_pct": 74.4,
+      "ambient_temp_C": 30.8
+    },
+    "timestamp": "2026-04-03T03:36:23Z"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with adhesive contamination",
+    "Visual pattern suggesting glue residue on surface",
+    "Localized deviation from normal leather appearance"
+  ],
+  "failure_mechanism": "adhesive contamination",
+  "mechanism_explanation": "Excess adhesive from a previous process step remains on the surface.",
+  "defect_region": "on the leather surface",
+  "defect_bbox_normalized": [
+    0.127,
+    0.104,
+    0.838,
+    0.862
+  ],
+  "severity": "minor",
+  "severity_visual_description": "minor glue residue on surface visible under inspection lighting",
+  "defect_class_token": "leather_glue_minor",
+  "confidence": 0.82,
+  "corrective_action": "Clean adhesive dispensing nozzles and add wipe station.",
+  "counterfactual_prediction": "After correction, the glue residue on surface would be absent and surface appears normal.",
+  "_meta": {
+    "category": "leather",
+    "defect_type": "glue",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "observed_anomaly_cues": [
+    "leads are visibly bent out of alignment",
+    "inconsistent spacing between leads"
+  ],
+  "failure_mechanism": "Improper tooling alignment during lead forming.",
+  "mechanism_explanation": "Improper tooling alignment can cause the leads to be bent during the forming process. The misalignment, even by a small margin, results in uneven force distribution, causing the leads to deform. This is exacerbated by tool wear and excessive line speed, which increase stress on the leads.",
+  "defect_region": "leads at the bottom of the transistor",
+  "defect_bbox_normalized": [
+    0.3,
+    0.8,
+    0.7,
+    1.0
+  ],
+  "severity": "moderate",
+  "severity_visual_description": "Leads are noticeably bent but not broken or severed.",
+  "defect_class_token": "bent_lead",
+  "confidence": 0.85,
+  "corrective_action": "Realign and maintain tooling, and reduce line speed.",
+  "counterfactual_prediction": "Leads appear straight and evenly spaced after corrective action.",
+  "_meta": {
+    "category": "transistor",
+    "defect_type": "bent_lead",
+    "reference_image": "/content/drive/MyDrive/Papers/Industrial/datasets/mvtec_ad/transistor/train/good/000.png",
+    "process_context": {
+      "line_speed_pct": 94.8,
+      "ambient_humidity_pct": 61.8,
+      "ambient_temp_C": 22.0
+    },
+    "timestamp": "2026-04-03T03:36:42Z"
+  }
+}

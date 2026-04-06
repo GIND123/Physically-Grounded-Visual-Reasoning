@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with mechanical stress",
+    "Visual pattern suggesting wire bent at abnormal angle",
+    "Localized deviation from normal cable appearance"
+  ],
+  "failure_mechanism": "mechanical stress",
+  "mechanism_explanation": "Sustained or excessive mechanical loading causes permanent deformation.",
+  "defect_region": "along the cable body",
+  "defect_bbox_normalized": [
+    0.211,
+    0.23,
+    0.76,
+    0.847
+  ],
+  "severity": "moderate",
+  "severity_visual_description": "moderate wire bent at abnormal angle visible under inspection lighting",
+  "defect_class_token": "cable_bent_wire_moderate",
+  "confidence": 0.81,
+  "corrective_action": "Reduce applied force and verify fixture alignment.",
+  "counterfactual_prediction": "After correction, the wire bent at abnormal angle would be absent and surface appears normal.",
+  "_meta": {
+    "category": "cable",
+    "defect_type": "bent_wire",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

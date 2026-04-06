@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with printing error",
+    "Visual pattern suggesting missing or distorted text imprint",
+    "Localized deviation from normal capsule appearance"
+  ],
+  "failure_mechanism": "printing error",
+  "mechanism_explanation": "Printing mechanism malfunction causes incomplete or distorted markings.",
+  "defect_region": "on the capsule surface",
+  "defect_bbox_normalized": [
+    0.265,
+    0.184,
+    0.704,
+    0.839
+  ],
+  "severity": "minor",
+  "severity_visual_description": "minor missing or distorted text imprint visible under inspection lighting",
+  "defect_class_token": "capsule_faulty_imprint_minor",
+  "confidence": 0.8,
+  "corrective_action": "Clean print heads and recalibrate printing alignment.",
+  "counterfactual_prediction": "After correction, the missing or distorted text imprint would be absent and surface appears normal.",
+  "_meta": {
+    "category": "capsule",
+    "defect_type": "faulty_imprint",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

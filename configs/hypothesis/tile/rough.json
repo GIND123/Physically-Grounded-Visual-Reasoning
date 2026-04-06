@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with surface fault",
+    "Visual pattern suggesting rough texture area",
+    "Localized deviation from normal tile appearance"
+  ],
+  "failure_mechanism": "surface fault",
+  "mechanism_explanation": "Process parameter deviation causes abnormal surface texture.",
+  "defect_region": "on the tile surface",
+  "defect_bbox_normalized": [
+    0.11,
+    0.151,
+    0.837,
+    0.804
+  ],
+  "severity": "minor",
+  "severity_visual_description": "minor rough texture area visible under inspection lighting",
+  "defect_class_token": "tile_rough_minor",
+  "confidence": 0.84,
+  "corrective_action": "Adjust process parameters to specification range.",
+  "counterfactual_prediction": "After correction, the rough texture area would be absent and surface appears normal.",
+  "_meta": {
+    "category": "tile",
+    "defect_type": "rough",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}

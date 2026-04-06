@@ -1,0 +1,28 @@
+{
+  "observed_anomaly_cues": [
+    "Surface irregularity consistent with fiber loss",
+    "Visual pattern suggesting missing fiber area",
+    "Localized deviation from normal carpet appearance"
+  ],
+  "failure_mechanism": "fiber loss",
+  "mechanism_explanation": "Mechanical wear or defect in weaving causes loss of material in a localized area.",
+  "defect_region": "on the carpet surface",
+  "defect_bbox_normalized": [
+    0.17,
+    0.25,
+    0.802,
+    0.782
+  ],
+  "severity": "critical",
+  "severity_visual_description": "critical missing fiber area visible under inspection lighting",
+  "defect_class_token": "carpet_hole_critical",
+  "confidence": 0.86,
+  "corrective_action": "Adjust loom tension and inspect weaving needles.",
+  "counterfactual_prediction": "After correction, the missing fiber area would be absent and surface appears normal.",
+  "_meta": {
+    "category": "carpet",
+    "defect_type": "hole",
+    "generation_method": "taxonomy_derived",
+    "timestamp": "2026-04-03T03:53:47Z"
+  }
+}
