@@ -1,0 +1,101 @@
+[
+  {
+    "category": "pill",
+    "target_defect": "color",
+    "material": "compressed_powder",
+    "process": "tablet compression and coating",
+    "mechanism": "coating_fault",
+    "expected_severity": "minor",
+    "simulated_conditions": {
+      "line_speed_pct": 68.5,
+      "ambient_humidity_pct": 59.6,
+      "ambient_temp_C": 21.9
+    }
+  },
+  {
+    "category": "pill",
+    "target_defect": "combined",
+    "material": "compressed_powder",
+    "process": "tablet compression and coating",
+    "mechanism": "multiple_faults",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "line_speed_pct": 110.3,
+      "ambient_humidity_pct": 71.0,
+      "ambient_temp_C": 19.2
+    }
+  },
+  {
+    "category": "pill",
+    "target_defect": "contamination",
+    "material": "compressed_powder",
+    "process": "tablet compression and coating",
+    "mechanism": "foreign_material",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "cleanroom_particle_count_per_m3": 16097,
+      "filter_change_days_overdue": 8,
+      "line_speed_pct": 98.4,
+      "ambient_humidity_pct": 38.7,
+      "ambient_temp_C": 20.2
+    }
+  },
+  {
+    "category": "pill",
+    "target_defect": "crack",
+    "material": "compressed_powder",
+    "process": "tablet compression and coating",
+    "mechanism": "compression_fault",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "pressure_MPa": 234.4,
+      "force_N": 4585.5,
+      "line_speed_pct": 88.6,
+      "ambient_humidity_pct": 67.2,
+      "ambient_temp_C": 31.7
+    }
+  },
+  {
+    "category": "pill",
+    "target_defect": "faulty_imprint",
+    "material": "compressed_powder",
+    "process": "tablet compression and coating",
+    "mechanism": "stamping_error",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "pressure_MPa": 54.1,
+      "force_N": 811.6,
+      "line_speed_pct": 86.6,
+      "ambient_humidity_pct": 49.2,
+      "ambient_temp_C": 25.9
+    }
+  },
+  {
+    "category": "pill",
+    "target_defect": "pill_type",
+    "material": "compressed_powder",
+    "process": "tablet compression and coating",
+    "mechanism": "sorting_error",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "pick_place_accuracy_mm": 1.107,
+      "vision_system_enabled": true,
+      "line_speed_pct": 68.0,
+      "ambient_humidity_pct": 64.4,
+      "ambient_temp_C": 31.6
+    }
+  },
+  {
+    "category": "pill",
+    "target_defect": "scratch",
+    "material": "compressed_powder",
+    "process": "tablet compression and coating",
+    "mechanism": "surface_abrasion",
+    "expected_severity": "minor",
+    "simulated_conditions": {
+      "line_speed_pct": 70.5,
+      "ambient_humidity_pct": 37.6,
+      "ambient_temp_C": 27.1
+    }
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "category": "metal_nut",
+    "target_defect": "bent",
+    "material": "steel",
+    "process": "cold heading and threading",
+    "mechanism": "mechanical_deformation",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "pressure_MPa": 135.7,
+      "force_N": 4868.5,
+      "line_speed_pct": 113.2,
+      "ambient_humidity_pct": 74.4,
+      "ambient_temp_C": 30.8
+    }
+  },
+  {
+    "category": "metal_nut",
+    "target_defect": "color",
+    "material": "steel",
+    "process": "cold heading and threading",
+    "mechanism": "heat_treatment_fault",
+    "expected_severity": "minor",
+    "simulated_conditions": {
+      "temperature_C": 308.7,
+      "cooling_rate_C_per_min": 22.5,
+      "line_speed_pct": 84.9,
+      "ambient_humidity_pct": 61.6,
+      "ambient_temp_C": 24.3
+    }
+  },
+  {
+    "category": "metal_nut",
+    "target_defect": "flip",
+    "material": "steel",
+    "process": "cold heading and threading",
+    "mechanism": "orientation_error",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "line_speed_pct": 110.0,
+      "ambient_humidity_pct": 50.6,
+      "ambient_temp_C": 22.2
+    }
+  },
+  {
+    "category": "metal_nut",
+    "target_defect": "scratch",
+    "material": "steel",
+    "process": "cold heading and threading",
+    "mechanism": "tool_wear",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "tool_hours_since_replacement": 312,
+      "tool_wear_pct": 53.0,
+      "line_speed_pct": 94.4,
+      "ambient_humidity_pct": 39.5,
+      "ambient_temp_C": 21.7
+    }
+  }
+]

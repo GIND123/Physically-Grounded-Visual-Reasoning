@@ -1,0 +1,71 @@
+[
+  {
+    "category": "screw",
+    "target_defect": "manipulated_front",
+    "material": "steel",
+    "process": "cold heading and thread rolling",
+    "mechanism": "intentional_damage",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "line_speed_pct": 72.0,
+      "ambient_humidity_pct": 37.2,
+      "ambient_temp_C": 25.9
+    }
+  },
+  {
+    "category": "screw",
+    "target_defect": "scratch_head",
+    "material": "steel",
+    "process": "cold heading and thread rolling",
+    "mechanism": "tool_wear",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "tool_hours_since_replacement": 358,
+      "tool_wear_pct": 60.1,
+      "line_speed_pct": 108.1,
+      "ambient_humidity_pct": 55.5,
+      "ambient_temp_C": 18.9
+    }
+  },
+  {
+    "category": "screw",
+    "target_defect": "scratch_neck",
+    "material": "steel",
+    "process": "cold heading and thread rolling",
+    "mechanism": "tool_wear",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "tool_hours_since_replacement": 2264,
+      "tool_wear_pct": 86.8,
+      "line_speed_pct": 113.4,
+      "ambient_humidity_pct": 74.3,
+      "ambient_temp_C": 32.4
+    }
+  },
+  {
+    "category": "screw",
+    "target_defect": "thread_side",
+    "material": "steel",
+    "process": "cold heading and thread rolling",
+    "mechanism": "forming_defect",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "line_speed_pct": 73.3,
+      "ambient_humidity_pct": 52.3,
+      "ambient_temp_C": 21.6
+    }
+  },
+  {
+    "category": "screw",
+    "target_defect": "thread_top",
+    "material": "steel",
+    "process": "cold heading and thread rolling",
+    "mechanism": "forming_defect",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "line_speed_pct": 85.1,
+      "ambient_humidity_pct": 30.9,
+      "ambient_temp_C": 24.4
+    }
+  }
+]

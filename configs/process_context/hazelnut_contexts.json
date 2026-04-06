@@ -1,0 +1,58 @@
+[
+  {
+    "category": "hazelnut",
+    "target_defect": "crack",
+    "material": "organic_nut",
+    "process": "sorting and roasting",
+    "mechanism": "thermal_stress",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "temperature_C": 186.4,
+      "cooling_rate_C_per_min": 4.1,
+      "line_speed_pct": 101.1,
+      "ambient_humidity_pct": 64.0,
+      "ambient_temp_C": 34.5
+    }
+  },
+  {
+    "category": "hazelnut",
+    "target_defect": "cut",
+    "material": "organic_nut",
+    "process": "sorting and roasting",
+    "mechanism": "mechanical_damage",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "pressure_MPa": 192.4,
+      "force_N": 4081.1,
+      "line_speed_pct": 70.3,
+      "ambient_humidity_pct": 59.3,
+      "ambient_temp_C": 32.3
+    }
+  },
+  {
+    "category": "hazelnut",
+    "target_defect": "hole",
+    "material": "organic_nut",
+    "process": "sorting and roasting",
+    "mechanism": "insect_damage",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "line_speed_pct": 90.4,
+      "ambient_humidity_pct": 37.9,
+      "ambient_temp_C": 24.4
+    }
+  },
+  {
+    "category": "hazelnut",
+    "target_defect": "print",
+    "material": "organic_nut",
+    "process": "sorting and roasting",
+    "mechanism": "surface_marking",
+    "expected_severity": "minor",
+    "simulated_conditions": {
+      "line_speed_pct": 73.1,
+      "ambient_humidity_pct": 75.7,
+      "ambient_temp_C": 33.7
+    }
+  }
+]

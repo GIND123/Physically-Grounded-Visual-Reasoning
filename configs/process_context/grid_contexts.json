@@ -1,0 +1,73 @@
+[
+  {
+    "category": "grid",
+    "target_defect": "bent",
+    "material": "metal",
+    "process": "stamping or etching",
+    "mechanism": "mechanical_deformation",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "pressure_MPa": 30.0,
+      "force_N": 415.0,
+      "line_speed_pct": 70.5,
+      "ambient_humidity_pct": 59.4,
+      "ambient_temp_C": 31.5
+    }
+  },
+  {
+    "category": "grid",
+    "target_defect": "broken",
+    "material": "metal",
+    "process": "stamping or etching",
+    "mechanism": "fracture",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "line_speed_pct": 86.1,
+      "ambient_humidity_pct": 31.2,
+      "ambient_temp_C": 24.5
+    }
+  },
+  {
+    "category": "grid",
+    "target_defect": "glue",
+    "material": "metal",
+    "process": "stamping or etching",
+    "mechanism": "adhesive_contamination",
+    "expected_severity": "minor",
+    "simulated_conditions": {
+      "cleanroom_particle_count_per_m3": 31174,
+      "filter_change_days_overdue": 16,
+      "line_speed_pct": 77.6,
+      "ambient_humidity_pct": 55.7,
+      "ambient_temp_C": 34.0
+    }
+  },
+  {
+    "category": "grid",
+    "target_defect": "metal_contamination",
+    "material": "metal",
+    "process": "stamping or etching",
+    "mechanism": "foreign_material",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "cleanroom_particle_count_per_m3": 45083,
+      "filter_change_days_overdue": 23,
+      "line_speed_pct": 70.7,
+      "ambient_humidity_pct": 72.2,
+      "ambient_temp_C": 30.8
+    }
+  },
+  {
+    "category": "grid",
+    "target_defect": "thread",
+    "material": "metal",
+    "process": "stamping or etching",
+    "mechanism": "threading_fault",
+    "expected_severity": "minor",
+    "simulated_conditions": {
+      "line_speed_pct": 103.4,
+      "ambient_humidity_pct": 45.0,
+      "ambient_temp_C": 23.0
+    }
+  }
+]

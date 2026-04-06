@@ -1,0 +1,47 @@
+[
+  {
+    "category": "bottle",
+    "target_defect": "broken_large",
+    "material": "glass",
+    "process": "glass molding and filling",
+    "mechanism": "thermal_shock",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "temperature_C": 297.1,
+      "cooling_rate_C_per_min": 4.7,
+      "line_speed_pct": 78.8,
+      "ambient_humidity_pct": 39.2,
+      "ambient_temp_C": 30.5
+    }
+  },
+  {
+    "category": "bottle",
+    "target_defect": "broken_small",
+    "material": "glass",
+    "process": "glass molding and filling",
+    "mechanism": "mechanical_impact",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "pressure_MPa": 171.8,
+      "force_N": 7141.7,
+      "line_speed_pct": 69.3,
+      "ambient_humidity_pct": 49.1,
+      "ambient_temp_C": 18.5
+    }
+  },
+  {
+    "category": "bottle",
+    "target_defect": "contamination",
+    "material": "glass",
+    "process": "glass molding and filling",
+    "mechanism": "foreign_material",
+    "expected_severity": "minor",
+    "simulated_conditions": {
+      "cleanroom_particle_count_per_m3": 14828,
+      "filter_change_days_overdue": 7,
+      "line_speed_pct": 90.3,
+      "ambient_humidity_pct": 29.3,
+      "ambient_temp_C": 21.4
+    }
+  }
+]

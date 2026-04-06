@@ -1,0 +1,71 @@
+[
+  {
+    "category": "carpet",
+    "target_defect": "color",
+    "material": "textile_fiber",
+    "process": "weaving and dyeing",
+    "mechanism": "dye_inconsistency",
+    "expected_severity": "minor",
+    "simulated_conditions": {
+      "line_speed_pct": 75.5,
+      "ambient_humidity_pct": 75.1,
+      "ambient_temp_C": 32.9
+    }
+  },
+  {
+    "category": "carpet",
+    "target_defect": "cut",
+    "material": "textile_fiber",
+    "process": "weaving and dyeing",
+    "mechanism": "mechanical_cut",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "pressure_MPa": 84.2,
+      "force_N": 5257.3,
+      "line_speed_pct": 84.8,
+      "ambient_humidity_pct": 73.7,
+      "ambient_temp_C": 25.8
+    }
+  },
+  {
+    "category": "carpet",
+    "target_defect": "hole",
+    "material": "textile_fiber",
+    "process": "weaving and dyeing",
+    "mechanism": "fiber_loss",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "line_speed_pct": 78.2,
+      "ambient_humidity_pct": 40.3,
+      "ambient_temp_C": 27.5
+    }
+  },
+  {
+    "category": "carpet",
+    "target_defect": "metal_contamination",
+    "material": "textile_fiber",
+    "process": "weaving and dyeing",
+    "mechanism": "foreign_material",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "cleanroom_particle_count_per_m3": 17719,
+      "filter_change_days_overdue": 23,
+      "line_speed_pct": 94.2,
+      "ambient_humidity_pct": 72.9,
+      "ambient_temp_C": 24.8
+    }
+  },
+  {
+    "category": "carpet",
+    "target_defect": "thread",
+    "material": "textile_fiber",
+    "process": "weaving and dyeing",
+    "mechanism": "weaving_fault",
+    "expected_severity": "minor",
+    "simulated_conditions": {
+      "line_speed_pct": 76.0,
+      "ambient_humidity_pct": 77.9,
+      "ambient_temp_C": 26.7
+    }
+  }
+]

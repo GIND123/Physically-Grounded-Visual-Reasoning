@@ -1,0 +1,106 @@
+[
+  {
+    "category": "cable",
+    "target_defect": "bent_wire",
+    "material": "copper_wire_pvc_insulation",
+    "process": "wire extrusion and assembly",
+    "mechanism": "mechanical_stress",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "pressure_MPa": 165.3,
+      "force_N": 4377.7,
+      "line_speed_pct": 76.0,
+      "ambient_humidity_pct": 57.5,
+      "ambient_temp_C": 31.8
+    }
+  },
+  {
+    "category": "cable",
+    "target_defect": "cable_swap",
+    "material": "copper_wire_pvc_insulation",
+    "process": "wire extrusion and assembly",
+    "mechanism": "assembly_error",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "pick_place_accuracy_mm": 0.059,
+      "vision_system_enabled": true,
+      "line_speed_pct": 99.9,
+      "ambient_humidity_pct": 45.0,
+      "ambient_temp_C": 20.6
+    }
+  },
+  {
+    "category": "cable",
+    "target_defect": "cut_inner_insulation",
+    "material": "copper_wire_pvc_insulation",
+    "process": "wire extrusion and assembly",
+    "mechanism": "tool_damage",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "tool_hours_since_replacement": 1428,
+      "tool_wear_pct": 37.0,
+      "line_speed_pct": 84.0,
+      "ambient_humidity_pct": 45.9,
+      "ambient_temp_C": 23.8
+    }
+  },
+  {
+    "category": "cable",
+    "target_defect": "cut_outer_insulation",
+    "material": "copper_wire_pvc_insulation",
+    "process": "wire extrusion and assembly",
+    "mechanism": "tool_damage",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "tool_hours_since_replacement": 1133,
+      "tool_wear_pct": 84.9,
+      "line_speed_pct": 101.5,
+      "ambient_humidity_pct": 54.8,
+      "ambient_temp_C": 34.5
+    }
+  },
+  {
+    "category": "cable",
+    "target_defect": "missing_cable",
+    "material": "copper_wire_pvc_insulation",
+    "process": "wire extrusion and assembly",
+    "mechanism": "assembly_omission",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "pick_place_accuracy_mm": 0.599,
+      "vision_system_enabled": false,
+      "line_speed_pct": 106.5,
+      "ambient_humidity_pct": 58.9,
+      "ambient_temp_C": 32.6
+    }
+  },
+  {
+    "category": "cable",
+    "target_defect": "missing_wire",
+    "material": "copper_wire_pvc_insulation",
+    "process": "wire extrusion and assembly",
+    "mechanism": "assembly_omission",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "pick_place_accuracy_mm": 0.887,
+      "vision_system_enabled": true,
+      "line_speed_pct": 67.3,
+      "ambient_humidity_pct": 39.4,
+      "ambient_temp_C": 22.9
+    }
+  },
+  {
+    "category": "cable",
+    "target_defect": "poke_insulation",
+    "material": "copper_wire_pvc_insulation",
+    "process": "wire extrusion and assembly",
+    "mechanism": "puncture",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "operator_force_N": 2.12,
+      "line_speed_pct": 76.6,
+      "ambient_humidity_pct": 33.1,
+      "ambient_temp_C": 22.7
+    }
+  }
+]

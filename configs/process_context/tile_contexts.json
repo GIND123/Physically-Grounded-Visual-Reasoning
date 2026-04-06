@@ -1,0 +1,73 @@
+[
+  {
+    "category": "tile",
+    "target_defect": "crack",
+    "material": "ceramic",
+    "process": "pressing and kiln firing",
+    "mechanism": "thermal_stress",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "temperature_C": 376.6,
+      "cooling_rate_C_per_min": 10.9,
+      "line_speed_pct": 104.2,
+      "ambient_humidity_pct": 50.8,
+      "ambient_temp_C": 25.2
+    }
+  },
+  {
+    "category": "tile",
+    "target_defect": "glue_strip",
+    "material": "ceramic",
+    "process": "pressing and kiln firing",
+    "mechanism": "adhesive_contamination",
+    "expected_severity": "minor",
+    "simulated_conditions": {
+      "cleanroom_particle_count_per_m3": 48374,
+      "filter_change_days_overdue": 25,
+      "line_speed_pct": 92.8,
+      "ambient_humidity_pct": 63.9,
+      "ambient_temp_C": 20.6
+    }
+  },
+  {
+    "category": "tile",
+    "target_defect": "gray_stroke",
+    "material": "ceramic",
+    "process": "pressing and kiln firing",
+    "mechanism": "glaze_fault",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "line_speed_pct": 79.8,
+      "ambient_humidity_pct": 76.4,
+      "ambient_temp_C": 27.8
+    }
+  },
+  {
+    "category": "tile",
+    "target_defect": "oil",
+    "material": "ceramic",
+    "process": "pressing and kiln firing",
+    "mechanism": "contamination",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "cleanroom_particle_count_per_m3": 36033,
+      "filter_change_days_overdue": 1,
+      "line_speed_pct": 102.4,
+      "ambient_humidity_pct": 30.9,
+      "ambient_temp_C": 27.9
+    }
+  },
+  {
+    "category": "tile",
+    "target_defect": "rough",
+    "material": "ceramic",
+    "process": "pressing and kiln firing",
+    "mechanism": "surface_fault",
+    "expected_severity": "minor",
+    "simulated_conditions": {
+      "line_speed_pct": 90.1,
+      "ambient_humidity_pct": 70.6,
+      "ambient_temp_C": 20.7
+    }
+  }
+]

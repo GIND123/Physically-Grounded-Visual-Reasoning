@@ -1,0 +1,74 @@
+[
+  {
+    "category": "capsule",
+    "target_defect": "crack",
+    "material": "gelatin",
+    "process": "capsule filling and sealing",
+    "mechanism": "drying_stress",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "temperature_C": 296.2,
+      "cooling_rate_C_per_min": 13.5,
+      "line_speed_pct": 83.5,
+      "ambient_humidity_pct": 38.5,
+      "ambient_temp_C": 22.5
+    }
+  },
+  {
+    "category": "capsule",
+    "target_defect": "faulty_imprint",
+    "material": "gelatin",
+    "process": "capsule filling and sealing",
+    "mechanism": "printing_error",
+    "expected_severity": "minor",
+    "simulated_conditions": {
+      "line_speed_pct": 111.8,
+      "ambient_humidity_pct": 60.4,
+      "ambient_temp_C": 28.4
+    }
+  },
+  {
+    "category": "capsule",
+    "target_defect": "poke",
+    "material": "gelatin",
+    "process": "capsule filling and sealing",
+    "mechanism": "mechanical_puncture",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "pressure_MPa": 49.4,
+      "force_N": 5843.8,
+      "operator_force_N": 3.29,
+      "line_speed_pct": 84.0,
+      "ambient_humidity_pct": 77.5,
+      "ambient_temp_C": 28.9
+    }
+  },
+  {
+    "category": "capsule",
+    "target_defect": "scratch",
+    "material": "gelatin",
+    "process": "capsule filling and sealing",
+    "mechanism": "surface_abrasion",
+    "expected_severity": "minor",
+    "simulated_conditions": {
+      "line_speed_pct": 92.8,
+      "ambient_humidity_pct": 62.2,
+      "ambient_temp_C": 32.3
+    }
+  },
+  {
+    "category": "capsule",
+    "target_defect": "squeeze",
+    "material": "gelatin",
+    "process": "capsule filling and sealing",
+    "mechanism": "compression",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "pressure_MPa": 195.8,
+      "force_N": 1863.2,
+      "line_speed_pct": 66.6,
+      "ambient_humidity_pct": 43.8,
+      "ambient_temp_C": 22.6
+    }
+  }
+]

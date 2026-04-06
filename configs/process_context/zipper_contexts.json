@@ -1,0 +1,84 @@
+[
+  {
+    "category": "zipper",
+    "target_defect": "broken_teeth",
+    "material": "metal_teeth_fabric_tape",
+    "process": "teeth stamping and tape assembly",
+    "mechanism": "stamping_fault",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "pressure_MPa": 114.0,
+      "force_N": 4364.0,
+      "line_speed_pct": 80.1,
+      "ambient_humidity_pct": 77.2,
+      "ambient_temp_C": 31.7
+    }
+  },
+  {
+    "category": "zipper",
+    "target_defect": "combined",
+    "material": "metal_teeth_fabric_tape",
+    "process": "teeth stamping and tape assembly",
+    "mechanism": "multiple_faults",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "line_speed_pct": 91.4,
+      "ambient_humidity_pct": 61.4,
+      "ambient_temp_C": 27.4
+    }
+  },
+  {
+    "category": "zipper",
+    "target_defect": "fabric_border",
+    "material": "metal_teeth_fabric_tape",
+    "process": "teeth stamping and tape assembly",
+    "mechanism": "sewing_fault",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "line_speed_pct": 111.6,
+      "ambient_humidity_pct": 33.2,
+      "ambient_temp_C": 32.9
+    }
+  },
+  {
+    "category": "zipper",
+    "target_defect": "fabric_interior",
+    "material": "metal_teeth_fabric_tape",
+    "process": "teeth stamping and tape assembly",
+    "mechanism": "weaving_fault",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "line_speed_pct": 78.2,
+      "ambient_humidity_pct": 72.5,
+      "ambient_temp_C": 30.6
+    }
+  },
+  {
+    "category": "zipper",
+    "target_defect": "split_teeth",
+    "material": "metal_teeth_fabric_tape",
+    "process": "teeth stamping and tape assembly",
+    "mechanism": "alignment_fault",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "line_speed_pct": 72.8,
+      "ambient_humidity_pct": 42.1,
+      "ambient_temp_C": 21.6
+    }
+  },
+  {
+    "category": "zipper",
+    "target_defect": "squeezed_teeth",
+    "material": "metal_teeth_fabric_tape",
+    "process": "teeth stamping and tape assembly",
+    "mechanism": "compression_damage",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "pressure_MPa": 91.0,
+      "force_N": 5512.5,
+      "line_speed_pct": 107.6,
+      "ambient_humidity_pct": 53.3,
+      "ambient_temp_C": 22.3
+    }
+  }
+]

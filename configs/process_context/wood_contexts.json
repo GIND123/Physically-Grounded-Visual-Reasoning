@@ -1,0 +1,69 @@
+[
+  {
+    "category": "wood",
+    "target_defect": "color",
+    "material": "natural_wood",
+    "process": "sawing and surface finishing",
+    "mechanism": "staining_or_fungal",
+    "expected_severity": "minor",
+    "simulated_conditions": {
+      "line_speed_pct": 71.5,
+      "ambient_humidity_pct": 60.3,
+      "ambient_temp_C": 25.8
+    }
+  },
+  {
+    "category": "wood",
+    "target_defect": "combined",
+    "material": "natural_wood",
+    "process": "sawing and surface finishing",
+    "mechanism": "multiple_faults",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "line_speed_pct": 111.5,
+      "ambient_humidity_pct": 74.8,
+      "ambient_temp_C": 18.2
+    }
+  },
+  {
+    "category": "wood",
+    "target_defect": "hole",
+    "material": "natural_wood",
+    "process": "sawing and surface finishing",
+    "mechanism": "knot_or_insect",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "line_speed_pct": 96.1,
+      "ambient_humidity_pct": 56.1,
+      "ambient_temp_C": 19.7
+    }
+  },
+  {
+    "category": "wood",
+    "target_defect": "liquid",
+    "material": "natural_wood",
+    "process": "sawing and surface finishing",
+    "mechanism": "spill_contamination",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "cleanroom_particle_count_per_m3": 35734,
+      "filter_change_days_overdue": 6,
+      "line_speed_pct": 90.3,
+      "ambient_humidity_pct": 34.6,
+      "ambient_temp_C": 23.9
+    }
+  },
+  {
+    "category": "wood",
+    "target_defect": "scratch",
+    "material": "natural_wood",
+    "process": "sawing and surface finishing",
+    "mechanism": "surface_abrasion",
+    "expected_severity": "minor",
+    "simulated_conditions": {
+      "line_speed_pct": 68.4,
+      "ambient_humidity_pct": 40.2,
+      "ambient_temp_C": 22.8
+    }
+  }
+]

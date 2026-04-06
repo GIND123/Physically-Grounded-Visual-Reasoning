@@ -1,0 +1,72 @@
+[
+  {
+    "category": "leather",
+    "target_defect": "color",
+    "material": "animal_hide",
+    "process": "tanning and finishing",
+    "mechanism": "dye_fault",
+    "expected_severity": "minor",
+    "simulated_conditions": {
+      "line_speed_pct": 110.9,
+      "ambient_humidity_pct": 57.9,
+      "ambient_temp_C": 26.3
+    }
+  },
+  {
+    "category": "leather",
+    "target_defect": "cut",
+    "material": "animal_hide",
+    "process": "tanning and finishing",
+    "mechanism": "mechanical_cut",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "pressure_MPa": 35.1,
+      "force_N": 2929.3,
+      "line_speed_pct": 114.3,
+      "ambient_humidity_pct": 68.3,
+      "ambient_temp_C": 22.1
+    }
+  },
+  {
+    "category": "leather",
+    "target_defect": "fold",
+    "material": "animal_hide",
+    "process": "tanning and finishing",
+    "mechanism": "handling_damage",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "line_speed_pct": 77.0,
+      "ambient_humidity_pct": 56.4,
+      "ambient_temp_C": 19.3
+    }
+  },
+  {
+    "category": "leather",
+    "target_defect": "glue",
+    "material": "animal_hide",
+    "process": "tanning and finishing",
+    "mechanism": "adhesive_contamination",
+    "expected_severity": "minor",
+    "simulated_conditions": {
+      "cleanroom_particle_count_per_m3": 48466,
+      "filter_change_days_overdue": 15,
+      "line_speed_pct": 105.8,
+      "ambient_humidity_pct": 76.9,
+      "ambient_temp_C": 27.1
+    }
+  },
+  {
+    "category": "leather",
+    "target_defect": "poke",
+    "material": "animal_hide",
+    "process": "tanning and finishing",
+    "mechanism": "puncture",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "operator_force_N": 2.76,
+      "line_speed_pct": 98.0,
+      "ambient_humidity_pct": 75.3,
+      "ambient_temp_C": 20.8
+    }
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "category": "transistor",
+    "target_defect": "bent_lead",
+    "material": "silicon_epoxy_metal_leads",
+    "process": "semiconductor packaging",
+    "mechanism": "handling_damage",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "line_speed_pct": 94.8,
+      "ambient_humidity_pct": 61.8,
+      "ambient_temp_C": 22.0
+    }
+  },
+  {
+    "category": "transistor",
+    "target_defect": "cut_lead",
+    "material": "silicon_epoxy_metal_leads",
+    "process": "semiconductor packaging",
+    "mechanism": "trimming_error",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "line_speed_pct": 71.0,
+      "ambient_humidity_pct": 72.5,
+      "ambient_temp_C": 22.2
+    }
+  },
+  {
+    "category": "transistor",
+    "target_defect": "damaged_case",
+    "material": "silicon_epoxy_metal_leads",
+    "process": "semiconductor packaging",
+    "mechanism": "mechanical_damage",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "pressure_MPa": 151.9,
+      "force_N": 4970.3,
+      "line_speed_pct": 86.0,
+      "ambient_humidity_pct": 57.2,
+      "ambient_temp_C": 26.9
+    }
+  },
+  {
+    "category": "transistor",
+    "target_defect": "misplaced",
+    "material": "silicon_epoxy_metal_leads",
+    "process": "semiconductor packaging",
+    "mechanism": "placement_error",
+    "expected_severity": "critical",
+    "simulated_conditions": {
+      "pick_place_accuracy_mm": 1.405,
+      "vision_system_enabled": true,
+      "line_speed_pct": 98.5,
+      "ambient_humidity_pct": 43.7,
+      "ambient_temp_C": 22.5
+    }
+  }
+]

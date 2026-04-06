@@ -1,0 +1,15 @@
+[
+  {
+    "category": "toothbrush",
+    "target_defect": "defective",
+    "material": "plastic_nylon",
+    "process": "injection molding and tufting",
+    "mechanism": "molding_or_tufting_fault",
+    "expected_severity": "moderate",
+    "simulated_conditions": {
+      "line_speed_pct": 113.0,
+      "ambient_humidity_pct": 32.0,
+      "ambient_temp_C": 21.2
+    }
+  }
+]
