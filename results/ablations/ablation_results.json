@@ -1,0 +1,71 @@
+[
+  {
+    "category": "bottle",
+    "config": "no_augmentation",
+    "auroc": 0.9024
+  },
+  {
+    "category": "bottle",
+    "config": "full_pipeline",
+    "auroc": 0.9175,
+    "n_syn": 13
+  },
+  {
+    "category": "bottle",
+    "config": "no_critic",
+    "auroc": 0.9175,
+    "n_syn": 15
+  },
+  {
+    "category": "bottle",
+    "config": "random_placement",
+    "auroc": 0.9302,
+    "n_syn": 10
+  },
+  {
+    "category": "metal_nut",
+    "config": "no_augmentation",
+    "auroc": 1.0
+  },
+  {
+    "category": "metal_nut",
+    "config": "full_pipeline",
+    "auroc": 1.0,
+    "n_syn": 15
+  },
+  {
+    "category": "metal_nut",
+    "config": "no_critic",
+    "auroc": 1.0,
+    "n_syn": 15
+  },
+  {
+    "category": "metal_nut",
+    "config": "random_placement",
+    "auroc": 1.0,
+    "n_syn": 10
+  },
+  {
+    "category": "transistor",
+    "config": "no_augmentation",
+    "auroc": 0.9429
+  },
+  {
+    "category": "transistor",
+    "config": "full_pipeline",
+    "auroc": 0.9417,
+    "n_syn": 20
+  },
+  {
+    "category": "transistor",
+    "config": "no_critic",
+    "auroc": 0.9417,
+    "n_syn": 20
+  },
+  {
+    "category": "transistor",
+    "config": "random_placement",
+    "auroc": 0.9417,
+    "n_syn": 10
+  }
+]
