@@ -1,0 +1,56 @@
+[
+  {
+    "category": "bottle",
+    "config": "real_only",
+    "image_auroc": 0.9024,
+    "recall_at_1pct_fpr": 0.0,
+    "n_normal": 20,
+    "n_defect": 63,
+    "n_total": 83
+  },
+  {
+    "category": "bottle",
+    "config": "real_plus_synthetic",
+    "image_auroc": 0.9175,
+    "recall_at_1pct_fpr": 0.0,
+    "n_normal": 20,
+    "n_defect": 63,
+    "n_total": 83
+  },
+  {
+    "category": "metal_nut",
+    "config": "real_only",
+    "image_auroc": 1.0,
+    "recall_at_1pct_fpr": 0.0,
+    "n_normal": 22,
+    "n_defect": 93,
+    "n_total": 115
+  },
+  {
+    "category": "metal_nut",
+    "config": "real_plus_synthetic",
+    "image_auroc": 1.0,
+    "recall_at_1pct_fpr": 0.0,
+    "n_normal": 22,
+    "n_defect": 93,
+    "n_total": 115
+  },
+  {
+    "category": "transistor",
+    "config": "real_only",
+    "image_auroc": 0.9429,
+    "recall_at_1pct_fpr": 0.125,
+    "n_normal": 60,
+    "n_defect": 40,
+    "n_total": 100
+  },
+  {
+    "category": "transistor",
+    "config": "real_plus_synthetic",
+    "image_auroc": 0.9417,
+    "recall_at_1pct_fpr": 0.125,
+    "n_normal": 60,
+    "n_defect": 40,
+    "n_total": 100
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "category": "bottle",
+    "config": "real_only",
+    "auroc": 0.9516
+  },
+  {
+    "category": "bottle",
+    "config": "real_plus_synthetic",
+    "auroc": 0.9524,
+    "n_syn": 13
+  },
+  {
+    "category": "metal_nut",
+    "config": "real_only",
+    "auroc": 0.9848
+  },
+  {
+    "category": "metal_nut",
+    "config": "real_plus_synthetic",
+    "auroc": 0.98,
+    "n_syn": 15
+  },
+  {
+    "category": "transistor",
+    "config": "real_only",
+    "auroc": 0.9396
+  },
+  {
+    "category": "transistor",
+    "config": "real_plus_synthetic",
+    "auroc": 0.9417,
+    "n_syn": 20
+  }
+]

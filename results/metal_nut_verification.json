@@ -1,0 +1,143 @@
+{
+  "color": {
+    "scores": [
+      {
+        "file": "syn_000.png",
+        "clip_score": 0.2494,
+        "anomaly_distance": 0.4227,
+        "clip_pass": true,
+        "anomaly_pass": true,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_001.png",
+        "clip_score": 0.2513,
+        "anomaly_distance": 0.3872,
+        "clip_pass": true,
+        "anomaly_pass": true,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_002.png",
+        "clip_score": 0.2561,
+        "anomaly_distance": 0.3635,
+        "clip_pass": true,
+        "anomaly_pass": true,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_003.png",
+        "clip_score": 0.2253,
+        "anomaly_distance": 0.4317,
+        "clip_pass": true,
+        "anomaly_pass": true,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_004.png",
+        "clip_score": 0.2615,
+        "anomaly_distance": 0.3505,
+        "clip_pass": true,
+        "anomaly_pass": true,
+        "verdict": "ACCEPT"
+      }
+    ],
+    "accepted": 5,
+    "rejected": 0,
+    "total": 5
+  },
+  "flip": {
+    "scores": [
+      {
+        "file": "syn_000.png",
+        "clip_score": 0.2677,
+        "anomaly_distance": 0.423,
+        "clip_pass": true,
+        "anomaly_pass": true,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_001.png",
+        "clip_score": 0.2563,
+        "anomaly_distance": 0.41,
+        "clip_pass": true,
+        "anomaly_pass": true,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_002.png",
+        "clip_score": 0.2658,
+        "anomaly_distance": 0.2675,
+        "clip_pass": true,
+        "anomaly_pass": true,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_003.png",
+        "clip_score": 0.2593,
+        "anomaly_distance": 0.4178,
+        "clip_pass": true,
+        "anomaly_pass": true,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_004.png",
+        "clip_score": 0.2332,
+        "anomaly_distance": 0.3944,
+        "clip_pass": true,
+        "anomaly_pass": true,
+        "verdict": "ACCEPT"
+      }
+    ],
+    "accepted": 5,
+    "rejected": 0,
+    "total": 5
+  },
+  "scratch": {
+    "scores": [
+      {
+        "file": "syn_000.png",
+        "clip_score": 0.2681,
+        "anomaly_distance": 0.4338,
+        "clip_pass": true,
+        "anomaly_pass": true,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_001.png",
+        "clip_score": 0.2818,
+        "anomaly_distance": 0.2792,
+        "clip_pass": true,
+        "anomaly_pass": true,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_002.png",
+        "clip_score": 0.26,
+        "anomaly_distance": 0.4303,
+        "clip_pass": true,
+        "anomaly_pass": true,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_003.png",
+        "clip_score": 0.2854,
+        "anomaly_distance": 0.4172,
+        "clip_pass": true,
+        "anomaly_pass": true,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_004.png",
+        "clip_score": 0.2705,
+        "anomaly_distance": 0.2882,
+        "clip_pass": true,
+        "anomaly_pass": true,
+        "verdict": "ACCEPT"
+      }
+    ],
+    "accepted": 5,
+    "rejected": 0,
+    "total": 5
+  }
+}

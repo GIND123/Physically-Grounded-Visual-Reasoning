@@ -1,0 +1,69 @@
+{
+  "defective": {
+    "scores": [
+      {
+        "file": "syn_000.png",
+        "clip_score": 0.2366,
+        "anomaly_distance": 0.4924,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_001.png",
+        "clip_score": 0.2308,
+        "anomaly_distance": 0.4267,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_002.png",
+        "clip_score": 0.2461,
+        "anomaly_distance": 0.5942,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_003.png",
+        "clip_score": 0.2584,
+        "anomaly_distance": 0.5796,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_004.png",
+        "clip_score": 0.2917,
+        "anomaly_distance": 0.5907,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_005.png",
+        "clip_score": 0.2758,
+        "anomaly_distance": 0.5558,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_006.png",
+        "clip_score": 0.2615,
+        "anomaly_distance": 0.564,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_007.png",
+        "clip_score": 0.2224,
+        "anomaly_distance": 0.5357,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_008.png",
+        "clip_score": 0.3067,
+        "anomaly_distance": 0.5918,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_009.png",
+        "clip_score": 0.2387,
+        "anomaly_distance": 0.6394,
+        "verdict": "ACCEPT"
+      }
+    ],
+    "accepted": 10,
+    "rejected": 0,
+    "total": 10
+  }
+}

@@ -1,0 +1,212 @@
+[
+  {
+    "category": "bottle",
+    "config": "real_only",
+    "image_auroc": 0.9024,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 83
+  },
+  {
+    "category": "bottle",
+    "config": "real_plus_synthetic",
+    "image_auroc": 0.9175,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 83
+  },
+  {
+    "category": "cable",
+    "config": "real_only",
+    "image_auroc": 0.9361,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 150
+  },
+  {
+    "category": "cable",
+    "config": "real_plus_synthetic",
+    "image_auroc": 0.934,
+    "recall_at_1pct_fpr": 0.8152,
+    "n_total": 150
+  },
+  {
+    "category": "capsule",
+    "config": "real_only",
+    "image_auroc": 0.935,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 132
+  },
+  {
+    "category": "capsule",
+    "config": "real_plus_synthetic",
+    "image_auroc": 0.9314,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 132
+  },
+  {
+    "category": "carpet",
+    "config": "real_only",
+    "image_auroc": 0.9872,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 117
+  },
+  {
+    "category": "carpet",
+    "config": "real_plus_synthetic",
+    "image_auroc": 0.9835,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 117
+  },
+  {
+    "category": "grid",
+    "config": "real_only",
+    "image_auroc": 1.0,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 78
+  },
+  {
+    "category": "grid",
+    "config": "real_plus_synthetic",
+    "image_auroc": 1.0,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 78
+  },
+  {
+    "category": "hazelnut",
+    "config": "real_only",
+    "image_auroc": 0.9993,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 110
+  },
+  {
+    "category": "hazelnut",
+    "config": "real_plus_synthetic",
+    "image_auroc": 0.9996,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 110
+  },
+  {
+    "category": "leather",
+    "config": "real_only",
+    "image_auroc": 0.9246,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 124
+  },
+  {
+    "category": "leather",
+    "config": "real_plus_synthetic",
+    "image_auroc": 0.8577,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 124
+  },
+  {
+    "category": "metal_nut",
+    "config": "real_only",
+    "image_auroc": 1.0,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 115
+  },
+  {
+    "category": "metal_nut",
+    "config": "real_plus_synthetic",
+    "image_auroc": 1.0,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 115
+  },
+  {
+    "category": "pill",
+    "config": "real_only",
+    "image_auroc": 0.9755,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 167
+  },
+  {
+    "category": "pill",
+    "config": "real_plus_synthetic",
+    "image_auroc": 0.9809,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 167
+  },
+  {
+    "category": "screw",
+    "config": "real_only",
+    "image_auroc": 0.8947,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 160
+  },
+  {
+    "category": "screw",
+    "config": "real_plus_synthetic",
+    "image_auroc": 0.8994,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 160
+  },
+  {
+    "category": "tile",
+    "config": "real_only",
+    "image_auroc": 0.9971,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 117
+  },
+  {
+    "category": "tile",
+    "config": "real_plus_synthetic",
+    "image_auroc": 0.9978,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 117
+  },
+  {
+    "category": "toothbrush",
+    "config": "real_only",
+    "image_auroc": 0.9194,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 42
+  },
+  {
+    "category": "toothbrush",
+    "config": "real_plus_synthetic",
+    "image_auroc": 0.925,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 42
+  },
+  {
+    "category": "transistor",
+    "config": "real_only",
+    "image_auroc": 0.9429,
+    "recall_at_1pct_fpr": 0.125,
+    "n_total": 100
+  },
+  {
+    "category": "transistor",
+    "config": "real_plus_synthetic",
+    "image_auroc": 0.9417,
+    "recall_at_1pct_fpr": 0.125,
+    "n_total": 100
+  },
+  {
+    "category": "wood",
+    "config": "real_only",
+    "image_auroc": 0.9982,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 79
+  },
+  {
+    "category": "wood",
+    "config": "real_plus_synthetic",
+    "image_auroc": 0.9982,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 79
+  },
+  {
+    "category": "zipper",
+    "config": "real_only",
+    "image_auroc": 0.6668,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 151
+  },
+  {
+    "category": "zipper",
+    "config": "real_plus_synthetic",
+    "image_auroc": 0.5725,
+    "recall_at_1pct_fpr": 0.0,
+    "n_total": 151
+  }
+]

@@ -1,0 +1,471 @@
+{
+  "color": {
+    "scores": [
+      {
+        "file": "syn_000.png",
+        "clip_score": 0.251,
+        "anomaly_distance": 0.4265,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_001.png",
+        "clip_score": 0.2598,
+        "anomaly_distance": 0.4042,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_002.png",
+        "clip_score": 0.2256,
+        "anomaly_distance": 0.3947,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_003.png",
+        "clip_score": 0.2429,
+        "anomaly_distance": 0.3861,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_004.png",
+        "clip_score": 0.2394,
+        "anomaly_distance": 0.4773,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_005.png",
+        "clip_score": 0.2543,
+        "anomaly_distance": 0.3928,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_006.png",
+        "clip_score": 0.2133,
+        "anomaly_distance": 0.4055,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_007.png",
+        "clip_score": 0.2357,
+        "anomaly_distance": 0.4089,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_008.png",
+        "clip_score": 0.2663,
+        "anomaly_distance": 0.4577,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_009.png",
+        "clip_score": 0.2685,
+        "anomaly_distance": 0.5114,
+        "verdict": "ACCEPT"
+      }
+    ],
+    "accepted": 10,
+    "rejected": 0,
+    "total": 10
+  },
+  "combined": {
+    "scores": [
+      {
+        "file": "syn_000.png",
+        "clip_score": 0.2158,
+        "anomaly_distance": 0.423,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_001.png",
+        "clip_score": 0.2204,
+        "anomaly_distance": 0.3844,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_002.png",
+        "clip_score": 0.1996,
+        "anomaly_distance": 0.41,
+        "verdict": "REJECT"
+      },
+      {
+        "file": "syn_003.png",
+        "clip_score": 0.2415,
+        "anomaly_distance": 0.496,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_004.png",
+        "clip_score": 0.2561,
+        "anomaly_distance": 0.4795,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_005.png",
+        "clip_score": 0.2337,
+        "anomaly_distance": 0.4503,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_006.png",
+        "clip_score": 0.188,
+        "anomaly_distance": 0.399,
+        "verdict": "REJECT"
+      },
+      {
+        "file": "syn_007.png",
+        "clip_score": 0.2823,
+        "anomaly_distance": 0.4549,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_008.png",
+        "clip_score": 0.2649,
+        "anomaly_distance": 0.5089,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_009.png",
+        "clip_score": 0.2504,
+        "anomaly_distance": 0.4335,
+        "verdict": "ACCEPT"
+      }
+    ],
+    "accepted": 8,
+    "rejected": 2,
+    "total": 10
+  },
+  "contamination": {
+    "scores": [
+      {
+        "file": "syn_000.png",
+        "clip_score": 0.2691,
+        "anomaly_distance": 0.5124,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_001.png",
+        "clip_score": 0.1966,
+        "anomaly_distance": 0.3906,
+        "verdict": "REJECT"
+      },
+      {
+        "file": "syn_002.png",
+        "clip_score": 0.242,
+        "anomaly_distance": 0.4989,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_003.png",
+        "clip_score": 0.2224,
+        "anomaly_distance": 0.3881,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_004.png",
+        "clip_score": 0.2797,
+        "anomaly_distance": 0.5349,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_005.png",
+        "clip_score": 0.2215,
+        "anomaly_distance": 0.375,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_006.png",
+        "clip_score": 0.2261,
+        "anomaly_distance": 0.4005,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_007.png",
+        "clip_score": 0.209,
+        "anomaly_distance": 0.4083,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_008.png",
+        "clip_score": 0.2742,
+        "anomaly_distance": 0.4741,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_009.png",
+        "clip_score": 0.213,
+        "anomaly_distance": 0.4883,
+        "verdict": "ACCEPT"
+      }
+    ],
+    "accepted": 9,
+    "rejected": 1,
+    "total": 10
+  },
+  "crack": {
+    "scores": [
+      {
+        "file": "syn_000.png",
+        "clip_score": 0.2946,
+        "anomaly_distance": 0.4687,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_001.png",
+        "clip_score": 0.2109,
+        "anomaly_distance": 0.4096,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_002.png",
+        "clip_score": 0.2342,
+        "anomaly_distance": 0.3893,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_003.png",
+        "clip_score": 0.2333,
+        "anomaly_distance": 0.3881,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_004.png",
+        "clip_score": 0.2605,
+        "anomaly_distance": 0.5179,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_005.png",
+        "clip_score": 0.2717,
+        "anomaly_distance": 0.4377,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_006.png",
+        "clip_score": 0.2014,
+        "anomaly_distance": 0.4246,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_007.png",
+        "clip_score": 0.2892,
+        "anomaly_distance": 0.4849,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_008.png",
+        "clip_score": 0.2397,
+        "anomaly_distance": 0.3964,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_009.png",
+        "clip_score": 0.2124,
+        "anomaly_distance": 0.4072,
+        "verdict": "ACCEPT"
+      }
+    ],
+    "accepted": 10,
+    "rejected": 0,
+    "total": 10
+  },
+  "faulty_imprint": {
+    "scores": [
+      {
+        "file": "syn_000.png",
+        "clip_score": 0.256,
+        "anomaly_distance": 0.4962,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_001.png",
+        "clip_score": 0.2307,
+        "anomaly_distance": 0.4164,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_002.png",
+        "clip_score": 0.2289,
+        "anomaly_distance": 0.4274,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_003.png",
+        "clip_score": 0.2571,
+        "anomaly_distance": 0.3885,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_004.png",
+        "clip_score": 0.1865,
+        "anomaly_distance": 0.4239,
+        "verdict": "REJECT"
+      },
+      {
+        "file": "syn_005.png",
+        "clip_score": 0.2091,
+        "anomaly_distance": 0.46,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_006.png",
+        "clip_score": 0.1979,
+        "anomaly_distance": 0.4022,
+        "verdict": "REJECT"
+      },
+      {
+        "file": "syn_007.png",
+        "clip_score": 0.1858,
+        "anomaly_distance": 0.4243,
+        "verdict": "REJECT"
+      },
+      {
+        "file": "syn_008.png",
+        "clip_score": 0.2177,
+        "anomaly_distance": 0.4373,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_009.png",
+        "clip_score": 0.2367,
+        "anomaly_distance": 0.5293,
+        "verdict": "ACCEPT"
+      }
+    ],
+    "accepted": 7,
+    "rejected": 3,
+    "total": 10
+  },
+  "pill_type": {
+    "scores": [
+      {
+        "file": "syn_000.png",
+        "clip_score": 0.2851,
+        "anomaly_distance": 0.4364,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_001.png",
+        "clip_score": 0.2046,
+        "anomaly_distance": 0.3857,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_002.png",
+        "clip_score": 0.2399,
+        "anomaly_distance": 0.4019,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_003.png",
+        "clip_score": 0.3238,
+        "anomaly_distance": 0.4713,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_004.png",
+        "clip_score": 0.2563,
+        "anomaly_distance": 0.481,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_005.png",
+        "clip_score": 0.2305,
+        "anomaly_distance": 0.4421,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_006.png",
+        "clip_score": 0.2622,
+        "anomaly_distance": 0.468,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_007.png",
+        "clip_score": 0.302,
+        "anomaly_distance": 0.4805,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_008.png",
+        "clip_score": 0.2336,
+        "anomaly_distance": 0.4251,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_009.png",
+        "clip_score": 0.287,
+        "anomaly_distance": 0.5488,
+        "verdict": "ACCEPT"
+      }
+    ],
+    "accepted": 10,
+    "rejected": 0,
+    "total": 10
+  },
+  "scratch": {
+    "scores": [
+      {
+        "file": "syn_000.png",
+        "clip_score": 0.2831,
+        "anomaly_distance": 0.4897,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_001.png",
+        "clip_score": 0.3065,
+        "anomaly_distance": 0.5232,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_002.png",
+        "clip_score": 0.2714,
+        "anomaly_distance": 0.432,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_003.png",
+        "clip_score": 0.2903,
+        "anomaly_distance": 0.4884,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_004.png",
+        "clip_score": 0.2734,
+        "anomaly_distance": 0.4024,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_005.png",
+        "clip_score": 0.2502,
+        "anomaly_distance": 0.4436,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_006.png",
+        "clip_score": 0.2866,
+        "anomaly_distance": 0.4633,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_007.png",
+        "clip_score": 0.2548,
+        "anomaly_distance": 0.4021,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_008.png",
+        "clip_score": 0.2366,
+        "anomaly_distance": 0.4382,
+        "verdict": "ACCEPT"
+      },
+      {
+        "file": "syn_009.png",
+        "clip_score": 0.2641,
+        "anomaly_distance": 0.3999,
+        "verdict": "ACCEPT"
+      }
+    ],
+    "accepted": 10,
+    "rejected": 0,
+    "total": 10
+  }
+}

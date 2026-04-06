@@ -1,0 +1,205 @@
+{
+  "counterfactual": {
+    "bottle": {
+      "broken_large": {
+        "factual_anomaly_score": 0.2271,
+        "counterfactual_anomaly_score": 0.2799,
+        "suppression_delta": -0.0528,
+        "suppression_ratio": -0.2327,
+        "defect_suppressed": false,
+        "corrective_action": "Reduce the cooling rate to allow for gradual temperature decrease."
+      },
+      "broken_small": {
+        "factual_anomaly_score": 0.2953,
+        "counterfactual_anomaly_score": 0.3154,
+        "suppression_delta": -0.0201,
+        "suppression_ratio": -0.0679,
+        "defect_suppressed": false,
+        "corrective_action": "Implement advanced temperature control systems to ensure uniform mold temperature."
+      },
+      "contamination": {
+        "factual_anomaly_score": 0.4201,
+        "counterfactual_anomaly_score": 0.3743,
+        "suppression_delta": 0.0459,
+        "suppression_ratio": 0.1092,
+        "defect_suppressed": true,
+        "corrective_action": "Thoroughly clean and sanitize filling equipment and improve cleanroom filtration."
+      }
+    },
+    "metal_nut": {
+      "bent": {
+        "factual_anomaly_score": 0.3053,
+        "counterfactual_anomaly_score": 0.319,
+        "suppression_delta": -0.0137,
+        "suppression_ratio": -0.0449,
+        "defect_suppressed": false,
+        "corrective_action": "calibrate equipment and ensure proper die alignment"
+      },
+      "color": {
+        "factual_anomaly_score": 0.5208,
+        "counterfactual_anomaly_score": 0.4476,
+        "suppression_delta": 0.0732,
+        "suppression_ratio": 0.1405,
+        "defect_suppressed": true,
+        "corrective_action": "Reduce process temperature and consider using protective coatings or inert atmospheres."
+      },
+      "flip": {
+        "factual_anomaly_score": 0.2944,
+        "counterfactual_anomaly_score": 0.3006,
+        "suppression_delta": -0.0062,
+        "suppression_ratio": -0.021,
+        "defect_suppressed": false,
+        "corrective_action": "Implement automated vision systems to ensure correct orientation before threading."
+      },
+      "scratch": {
+        "factual_anomaly_score": 0.2988,
+        "counterfactual_anomaly_score": 0.271,
+        "suppression_delta": 0.0278,
+        "suppression_ratio": 0.0931,
+        "defect_suppressed": true,
+        "corrective_action": "Inspect and replace worn tools, and ensure regular cleaning to remove debris."
+      }
+    },
+    "transistor": {
+      "bent_lead": {
+        "factual_anomaly_score": 0.1101,
+        "counterfactual_anomaly_score": 0.1235,
+        "suppression_delta": -0.0134,
+        "suppression_ratio": -0.1213,
+        "defect_suppressed": false,
+        "corrective_action": "Realign and maintain tooling, and reduce line speed."
+      },
+      "cut_lead": {
+        "factual_anomaly_score": 0.106,
+        "counterfactual_anomaly_score": 0.1275,
+        "suppression_delta": -0.0215,
+        "suppression_ratio": -0.2026,
+        "defect_suppressed": false,
+        "corrective_action": "Recalibrate cutting tools and ensure regular sharpening."
+      },
+      "damaged_case": {
+        "factual_anomaly_score": 0.217,
+        "counterfactual_anomaly_score": 0.2198,
+        "suppression_delta": -0.0028,
+        "suppression_ratio": -0.0129,
+        "defect_suppressed": false,
+        "corrective_action": "Reduce mold pressure to below 100 MPa and ensure consistent epoxy viscosity."
+      },
+      "misplaced": {
+        "factual_anomaly_score": 0.1647,
+        "counterfactual_anomaly_score": 0.1832,
+        "suppression_delta": -0.0184,
+        "suppression_ratio": -0.1119,
+        "defect_suppressed": false,
+        "corrective_action": "calibrate and align placement tools to within 0.01 mm accuracy"
+      }
+    }
+  },
+  "ablations": [
+    {
+      "category": "bottle",
+      "config": "no_augmentation",
+      "auroc": 0.9024
+    },
+    {
+      "category": "bottle",
+      "config": "full_pipeline",
+      "auroc": 0.9175,
+      "n_syn": 13
+    },
+    {
+      "category": "bottle",
+      "config": "no_critic",
+      "auroc": 0.9175,
+      "n_syn": 15
+    },
+    {
+      "category": "bottle",
+      "config": "random_placement",
+      "auroc": 0.9302,
+      "n_syn": 10
+    },
+    {
+      "category": "metal_nut",
+      "config": "no_augmentation",
+      "auroc": 1.0
+    },
+    {
+      "category": "metal_nut",
+      "config": "full_pipeline",
+      "auroc": 1.0,
+      "n_syn": 15
+    },
+    {
+      "category": "metal_nut",
+      "config": "no_critic",
+      "auroc": 1.0,
+      "n_syn": 15
+    },
+    {
+      "category": "metal_nut",
+      "config": "random_placement",
+      "auroc": 1.0,
+      "n_syn": 10
+    },
+    {
+      "category": "transistor",
+      "config": "no_augmentation",
+      "auroc": 0.9429
+    },
+    {
+      "category": "transistor",
+      "config": "full_pipeline",
+      "auroc": 0.9417,
+      "n_syn": 20
+    },
+    {
+      "category": "transistor",
+      "config": "no_critic",
+      "auroc": 0.9417,
+      "n_syn": 20
+    },
+    {
+      "category": "transistor",
+      "config": "random_placement",
+      "auroc": 0.9417,
+      "n_syn": 10
+    }
+  ],
+  "efficientad": [
+    {
+      "category": "bottle",
+      "config": "real_only",
+      "auroc": 0.9516
+    },
+    {
+      "category": "bottle",
+      "config": "real_plus_synthetic",
+      "auroc": 0.9524,
+      "n_syn": 13
+    },
+    {
+      "category": "metal_nut",
+      "config": "real_only",
+      "auroc": 0.9848
+    },
+    {
+      "category": "metal_nut",
+      "config": "real_plus_synthetic",
+      "auroc": 0.98,
+      "n_syn": 15
+    },
+    {
+      "category": "transistor",
+      "config": "real_only",
+      "auroc": 0.9396
+    },
+    {
+      "category": "transistor",
+      "config": "real_plus_synthetic",
+      "auroc": 0.9417,
+      "n_syn": 20
+    }
+  ],
+  "winclip": {}
+}
