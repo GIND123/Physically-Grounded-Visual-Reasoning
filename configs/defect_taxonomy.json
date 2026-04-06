@@ -1,0 +1,449 @@
+{
+  "mvtec_ad": {
+    "bottle": {
+      "material": "glass",
+      "process": "glass molding and filling",
+      "defects": {
+        "broken_large": {
+          "mechanism": "thermal_shock",
+          "visual": "large crack or missing chunk",
+          "severity": "critical"
+        },
+        "broken_small": {
+          "mechanism": "mechanical_impact",
+          "visual": "small chip or hairline crack",
+          "severity": "moderate"
+        },
+        "contamination": {
+          "mechanism": "foreign_material",
+          "visual": "dark spots or particles on surface",
+          "severity": "minor"
+        }
+      }
+    },
+    "cable": {
+      "material": "copper_wire_pvc_insulation",
+      "process": "wire extrusion and assembly",
+      "defects": {
+        "bent_wire": {
+          "mechanism": "mechanical_stress",
+          "visual": "wire bent at abnormal angle",
+          "severity": "moderate"
+        },
+        "cable_swap": {
+          "mechanism": "assembly_error",
+          "visual": "cables in wrong positions",
+          "severity": "critical"
+        },
+        "cut_inner_insulation": {
+          "mechanism": "tool_damage",
+          "visual": "cut through inner insulation layer",
+          "severity": "critical"
+        },
+        "cut_outer_insulation": {
+          "mechanism": "tool_damage",
+          "visual": "cut through outer insulation",
+          "severity": "moderate"
+        },
+        "missing_cable": {
+          "mechanism": "assembly_omission",
+          "visual": "cable absent from expected position",
+          "severity": "critical"
+        },
+        "missing_wire": {
+          "mechanism": "assembly_omission",
+          "visual": "individual wire missing",
+          "severity": "critical"
+        },
+        "poke_insulation": {
+          "mechanism": "puncture",
+          "visual": "small hole in insulation",
+          "severity": "moderate"
+        }
+      }
+    },
+    "capsule": {
+      "material": "gelatin",
+      "process": "capsule filling and sealing",
+      "defects": {
+        "crack": {
+          "mechanism": "drying_stress",
+          "visual": "linear crack on capsule surface",
+          "severity": "critical"
+        },
+        "faulty_imprint": {
+          "mechanism": "printing_error",
+          "visual": "missing or distorted text imprint",
+          "severity": "minor"
+        },
+        "poke": {
+          "mechanism": "mechanical_puncture",
+          "visual": "small hole in capsule wall",
+          "severity": "critical"
+        },
+        "scratch": {
+          "mechanism": "surface_abrasion",
+          "visual": "linear surface mark",
+          "severity": "minor"
+        },
+        "squeeze": {
+          "mechanism": "compression",
+          "visual": "deformed capsule shape",
+          "severity": "moderate"
+        }
+      }
+    },
+    "carpet": {
+      "material": "textile_fiber",
+      "process": "weaving and dyeing",
+      "defects": {
+        "color": {
+          "mechanism": "dye_inconsistency",
+          "visual": "color variation or staining",
+          "severity": "minor"
+        },
+        "cut": {
+          "mechanism": "mechanical_cut",
+          "visual": "cut fibers",
+          "severity": "moderate"
+        },
+        "hole": {
+          "mechanism": "fiber_loss",
+          "visual": "missing fiber area",
+          "severity": "critical"
+        },
+        "metal_contamination": {
+          "mechanism": "foreign_material",
+          "visual": "metallic particle embedded",
+          "severity": "moderate"
+        },
+        "thread": {
+          "mechanism": "weaving_fault",
+          "visual": "loose or misaligned thread",
+          "severity": "minor"
+        }
+      }
+    },
+    "grid": {
+      "material": "metal",
+      "process": "stamping or etching",
+      "defects": {
+        "bent": {
+          "mechanism": "mechanical_deformation",
+          "visual": "bent grid element",
+          "severity": "moderate"
+        },
+        "broken": {
+          "mechanism": "fracture",
+          "visual": "broken grid connection",
+          "severity": "critical"
+        },
+        "glue": {
+          "mechanism": "adhesive_contamination",
+          "visual": "excess glue on surface",
+          "severity": "minor"
+        },
+        "metal_contamination": {
+          "mechanism": "foreign_material",
+          "visual": "foreign metal particle",
+          "severity": "moderate"
+        },
+        "thread": {
+          "mechanism": "threading_fault",
+          "visual": "loose thread or fiber",
+          "severity": "minor"
+        }
+      }
+    },
+    "hazelnut": {
+      "material": "organic_nut",
+      "process": "sorting and roasting",
+      "defects": {
+        "crack": {
+          "mechanism": "thermal_stress",
+          "visual": "crack in shell",
+          "severity": "moderate"
+        },
+        "cut": {
+          "mechanism": "mechanical_damage",
+          "visual": "cut mark on surface",
+          "severity": "moderate"
+        },
+        "hole": {
+          "mechanism": "insect_damage",
+          "visual": "hole in shell",
+          "severity": "critical"
+        },
+        "print": {
+          "mechanism": "surface_marking",
+          "visual": "printed mark or stain",
+          "severity": "minor"
+        }
+      }
+    },
+    "leather": {
+      "material": "animal_hide",
+      "process": "tanning and finishing",
+      "defects": {
+        "color": {
+          "mechanism": "dye_fault",
+          "visual": "color inconsistency",
+          "severity": "minor"
+        },
+        "cut": {
+          "mechanism": "mechanical_cut",
+          "visual": "cut in leather surface",
+          "severity": "critical"
+        },
+        "fold": {
+          "mechanism": "handling_damage",
+          "visual": "crease or fold mark",
+          "severity": "moderate"
+        },
+        "glue": {
+          "mechanism": "adhesive_contamination",
+          "visual": "glue residue on surface",
+          "severity": "minor"
+        },
+        "poke": {
+          "mechanism": "puncture",
+          "visual": "small hole or puncture",
+          "severity": "moderate"
+        }
+      }
+    },
+    "metal_nut": {
+      "material": "steel",
+      "process": "cold heading and threading",
+      "defects": {
+        "bent": {
+          "mechanism": "mechanical_deformation",
+          "visual": "deformed nut shape",
+          "severity": "critical"
+        },
+        "color": {
+          "mechanism": "heat_treatment_fault",
+          "visual": "discoloration on surface",
+          "severity": "minor"
+        },
+        "flip": {
+          "mechanism": "orientation_error",
+          "visual": "nut flipped upside down",
+          "severity": "critical"
+        },
+        "scratch": {
+          "mechanism": "tool_wear",
+          "visual": "linear scratch marks",
+          "severity": "moderate"
+        }
+      }
+    },
+    "pill": {
+      "material": "compressed_powder",
+      "process": "tablet compression and coating",
+      "defects": {
+        "color": {
+          "mechanism": "coating_fault",
+          "visual": "color deviation",
+          "severity": "minor"
+        },
+        "combined": {
+          "mechanism": "multiple_faults",
+          "visual": "multiple defect types present",
+          "severity": "critical"
+        },
+        "contamination": {
+          "mechanism": "foreign_material",
+          "visual": "particle on surface",
+          "severity": "critical"
+        },
+        "crack": {
+          "mechanism": "compression_fault",
+          "visual": "crack in tablet",
+          "severity": "critical"
+        },
+        "faulty_imprint": {
+          "mechanism": "stamping_error",
+          "visual": "missing or blurred imprint",
+          "severity": "moderate"
+        },
+        "pill_type": {
+          "mechanism": "sorting_error",
+          "visual": "wrong pill type",
+          "severity": "critical"
+        },
+        "scratch": {
+          "mechanism": "surface_abrasion",
+          "visual": "scratch on coating",
+          "severity": "minor"
+        }
+      }
+    },
+    "screw": {
+      "material": "steel",
+      "process": "cold heading and thread rolling",
+      "defects": {
+        "manipulated_front": {
+          "mechanism": "intentional_damage",
+          "visual": "damaged screw head front",
+          "severity": "critical"
+        },
+        "scratch_head": {
+          "mechanism": "tool_wear",
+          "visual": "scratch on screw head",
+          "severity": "moderate"
+        },
+        "scratch_neck": {
+          "mechanism": "tool_wear",
+          "visual": "scratch on screw neck",
+          "severity": "moderate"
+        },
+        "thread_side": {
+          "mechanism": "forming_defect",
+          "visual": "thread damage on side",
+          "severity": "critical"
+        },
+        "thread_top": {
+          "mechanism": "forming_defect",
+          "visual": "thread damage on top",
+          "severity": "critical"
+        }
+      }
+    },
+    "tile": {
+      "material": "ceramic",
+      "process": "pressing and kiln firing",
+      "defects": {
+        "crack": {
+          "mechanism": "thermal_stress",
+          "visual": "crack in tile surface",
+          "severity": "critical"
+        },
+        "glue_strip": {
+          "mechanism": "adhesive_contamination",
+          "visual": "glue strip on surface",
+          "severity": "minor"
+        },
+        "gray_stroke": {
+          "mechanism": "glaze_fault",
+          "visual": "gray discoloration stroke",
+          "severity": "moderate"
+        },
+        "oil": {
+          "mechanism": "contamination",
+          "visual": "oil stain on surface",
+          "severity": "moderate"
+        },
+        "rough": {
+          "mechanism": "surface_fault",
+          "visual": "rough texture area",
+          "severity": "minor"
+        }
+      }
+    },
+    "toothbrush": {
+      "material": "plastic_nylon",
+      "process": "injection molding and tufting",
+      "defects": {
+        "defective": {
+          "mechanism": "molding_or_tufting_fault",
+          "visual": "visible manufacturing defect",
+          "severity": "moderate"
+        }
+      }
+    },
+    "transistor": {
+      "material": "silicon_epoxy_metal_leads",
+      "process": "semiconductor packaging",
+      "defects": {
+        "bent_lead": {
+          "mechanism": "handling_damage",
+          "visual": "bent component lead",
+          "severity": "critical"
+        },
+        "cut_lead": {
+          "mechanism": "trimming_error",
+          "visual": "lead cut too short",
+          "severity": "critical"
+        },
+        "damaged_case": {
+          "mechanism": "mechanical_damage",
+          "visual": "cracked or chipped case",
+          "severity": "critical"
+        },
+        "misplaced": {
+          "mechanism": "placement_error",
+          "visual": "component in wrong position",
+          "severity": "critical"
+        }
+      }
+    },
+    "wood": {
+      "material": "natural_wood",
+      "process": "sawing and surface finishing",
+      "defects": {
+        "color": {
+          "mechanism": "staining_or_fungal",
+          "visual": "color variation or stain",
+          "severity": "minor"
+        },
+        "combined": {
+          "mechanism": "multiple_faults",
+          "visual": "multiple defect types",
+          "severity": "critical"
+        },
+        "hole": {
+          "mechanism": "knot_or_insect",
+          "visual": "hole in wood surface",
+          "severity": "moderate"
+        },
+        "liquid": {
+          "mechanism": "spill_contamination",
+          "visual": "liquid stain",
+          "severity": "moderate"
+        },
+        "scratch": {
+          "mechanism": "surface_abrasion",
+          "visual": "scratch mark on surface",
+          "severity": "minor"
+        }
+      }
+    },
+    "zipper": {
+      "material": "metal_teeth_fabric_tape",
+      "process": "teeth stamping and tape assembly",
+      "defects": {
+        "broken_teeth": {
+          "mechanism": "stamping_fault",
+          "visual": "missing or broken teeth",
+          "severity": "critical"
+        },
+        "combined": {
+          "mechanism": "multiple_faults",
+          "visual": "multiple defect types",
+          "severity": "critical"
+        },
+        "fabric_border": {
+          "mechanism": "sewing_fault",
+          "visual": "fabric edge defect",
+          "severity": "moderate"
+        },
+        "fabric_interior": {
+          "mechanism": "weaving_fault",
+          "visual": "fabric interior defect",
+          "severity": "moderate"
+        },
+        "split_teeth": {
+          "mechanism": "alignment_fault",
+          "visual": "teeth separated from tape",
+          "severity": "critical"
+        },
+        "squeezed_teeth": {
+          "mechanism": "compression_damage",
+          "visual": "teeth compressed together",
+          "severity": "moderate"
+        }
+      }
+    }
+  }
+}
