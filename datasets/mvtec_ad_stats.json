@@ -1,0 +1,300 @@
+[
+  {
+    "category": "bottle",
+    "train_normal": 209,
+    "test_normal": 20,
+    "test_defect": 63,
+    "defect_types": [
+      "broken_large",
+      "broken_small",
+      "contamination"
+    ]
+  },
+  {
+    "category": "bottle_metadata.json",
+    "train_normal": 0,
+    "test_normal": 0,
+    "test_defect": 0,
+    "defect_types": []
+  },
+  {
+    "category": "cable",
+    "train_normal": 224,
+    "test_normal": 58,
+    "test_defect": 92,
+    "defect_types": [
+      "bent_wire",
+      "cable_swap",
+      "combined",
+      "cut_inner_insulation",
+      "cut_outer_insulation",
+      "missing_cable",
+      "missing_wire",
+      "poke_insulation"
+    ]
+  },
+  {
+    "category": "cable_metadata.json",
+    "train_normal": 0,
+    "test_normal": 0,
+    "test_defect": 0,
+    "defect_types": []
+  },
+  {
+    "category": "capsule",
+    "train_normal": 219,
+    "test_normal": 23,
+    "test_defect": 109,
+    "defect_types": [
+      "crack",
+      "faulty_imprint",
+      "poke",
+      "scratch",
+      "squeeze"
+    ]
+  },
+  {
+    "category": "capsule_metadata.json",
+    "train_normal": 0,
+    "test_normal": 0,
+    "test_defect": 0,
+    "defect_types": []
+  },
+  {
+    "category": "carpet",
+    "train_normal": 280,
+    "test_normal": 28,
+    "test_defect": 89,
+    "defect_types": [
+      "color",
+      "cut",
+      "hole",
+      "metal_contamination",
+      "thread"
+    ]
+  },
+  {
+    "category": "carpet_metadata.json",
+    "train_normal": 0,
+    "test_normal": 0,
+    "test_defect": 0,
+    "defect_types": []
+  },
+  {
+    "category": "grid",
+    "train_normal": 264,
+    "test_normal": 21,
+    "test_defect": 57,
+    "defect_types": [
+      "bent",
+      "broken",
+      "glue",
+      "metal_contamination",
+      "thread"
+    ]
+  },
+  {
+    "category": "grid_metadata.json",
+    "train_normal": 0,
+    "test_normal": 0,
+    "test_defect": 0,
+    "defect_types": []
+  },
+  {
+    "category": "hazelnut",
+    "train_normal": 391,
+    "test_normal": 40,
+    "test_defect": 70,
+    "defect_types": [
+      "crack",
+      "cut",
+      "hole",
+      "print"
+    ]
+  },
+  {
+    "category": "hazelnut_metadata.json",
+    "train_normal": 0,
+    "test_normal": 0,
+    "test_defect": 0,
+    "defect_types": []
+  },
+  {
+    "category": "leather",
+    "train_normal": 245,
+    "test_normal": 32,
+    "test_defect": 92,
+    "defect_types": [
+      "color",
+      "cut",
+      "fold",
+      "glue",
+      "poke"
+    ]
+  },
+  {
+    "category": "leather_metadata.json",
+    "train_normal": 0,
+    "test_normal": 0,
+    "test_defect": 0,
+    "defect_types": []
+  },
+  {
+    "category": "metal_nut",
+    "train_normal": 220,
+    "test_normal": 22,
+    "test_defect": 93,
+    "defect_types": [
+      "bent",
+      "color",
+      "flip",
+      "scratch"
+    ]
+  },
+  {
+    "category": "metal_nut_metadata.json",
+    "train_normal": 0,
+    "test_normal": 0,
+    "test_defect": 0,
+    "defect_types": []
+  },
+  {
+    "category": "pill",
+    "train_normal": 267,
+    "test_normal": 26,
+    "test_defect": 141,
+    "defect_types": [
+      "color",
+      "combined",
+      "contamination",
+      "crack",
+      "faulty_imprint",
+      "pill_type",
+      "scratch"
+    ]
+  },
+  {
+    "category": "pill_metadata.json",
+    "train_normal": 0,
+    "test_normal": 0,
+    "test_defect": 0,
+    "defect_types": []
+  },
+  {
+    "category": "screw",
+    "train_normal": 320,
+    "test_normal": 41,
+    "test_defect": 119,
+    "defect_types": [
+      "manipulated_front",
+      "scratch_head",
+      "scratch_neck",
+      "thread_side",
+      "thread_top"
+    ]
+  },
+  {
+    "category": "screw_metadata.json",
+    "train_normal": 0,
+    "test_normal": 0,
+    "test_defect": 0,
+    "defect_types": []
+  },
+  {
+    "category": "tile",
+    "train_normal": 230,
+    "test_normal": 33,
+    "test_defect": 84,
+    "defect_types": [
+      "crack",
+      "glue_strip",
+      "gray_stroke",
+      "oil",
+      "rough"
+    ]
+  },
+  {
+    "category": "tile_metadata.json",
+    "train_normal": 0,
+    "test_normal": 0,
+    "test_defect": 0,
+    "defect_types": []
+  },
+  {
+    "category": "toothbrush",
+    "train_normal": 60,
+    "test_normal": 12,
+    "test_defect": 30,
+    "defect_types": [
+      "defective"
+    ]
+  },
+  {
+    "category": "toothbrush_metadata.json",
+    "train_normal": 0,
+    "test_normal": 0,
+    "test_defect": 0,
+    "defect_types": []
+  },
+  {
+    "category": "transistor",
+    "train_normal": 213,
+    "test_normal": 60,
+    "test_defect": 40,
+    "defect_types": [
+      "bent_lead",
+      "cut_lead",
+      "damaged_case",
+      "misplaced"
+    ]
+  },
+  {
+    "category": "transistor_metadata.json",
+    "train_normal": 0,
+    "test_normal": 0,
+    "test_defect": 0,
+    "defect_types": []
+  },
+  {
+    "category": "wood",
+    "train_normal": 247,
+    "test_normal": 19,
+    "test_defect": 60,
+    "defect_types": [
+      "color",
+      "combined",
+      "hole",
+      "liquid",
+      "scratch"
+    ]
+  },
+  {
+    "category": "wood_metadata.json",
+    "train_normal": 0,
+    "test_normal": 0,
+    "test_defect": 0,
+    "defect_types": []
+  },
+  {
+    "category": "zipper",
+    "train_normal": 240,
+    "test_normal": 32,
+    "test_defect": 119,
+    "defect_types": [
+      "broken_teeth",
+      "combined",
+      "fabric_border",
+      "fabric_interior",
+      "rough",
+      "split_teeth",
+      "squeezed_teeth"
+    ]
+  },
+  {
+    "category": "zipper_metadata.json",
+    "train_normal": 0,
+    "test_normal": 0,
+    "test_defect": 0,
+    "defect_types": []
+  }
+]
