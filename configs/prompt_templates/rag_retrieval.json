@@ -1,0 +1,9 @@
+{
+  "description": "Query template for ChromaDB retrieval at inference time.",
+  "templates": {
+    "by_category_and_defect": "What causes {defect_type} defects in {category} during {process}?",
+    "by_mechanism": "Process parameters and failure mechanism for {mechanism} in {material}",
+    "corrective": "Corrective action and tolerance limits for {defect_type} in {category}",
+    "severity": "Acceptance criteria and severity thresholds for {defect_type} on {material}"
+  }
+}

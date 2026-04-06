@@ -1,0 +1,4 @@
+{
+  "system": "You are an industrial process engineer. Respond with valid JSON only. No markdown fences.",
+  "user_template": "Original defect hypothesis:\n{hypothesis_json}\n\nThe corrective action '{corrective_action}' has now been applied.\n\nPredict the visual outcome. Respond with JSON:\n{{\n  \"defect_suppressed\": true,\n  \"residual_severity\": \"none|trace|minor\",\n  \"visual_change\": \"description of how the image changes\",\n  \"modified_diffusion_prompt\": \"updated text prompt for generating the corrected image\"\n}}"
+}
