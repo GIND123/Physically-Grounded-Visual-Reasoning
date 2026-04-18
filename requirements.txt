@@ -1,0 +1,41 @@
+# PGVR-IDA Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core ML
+torch>=2.0.0
+torchvision>=0.15.0
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Diffusion & generation
+diffusers>=0.21.0
+transformers>=4.30.0
+accelerate>=0.20.0
+peft>=0.4.0
+
+# Vision models
+segment-anything
+open-clip-torch
+controlnet-aux
+faiss-cpu          # or faiss-gpu if CUDA available
+
+# Metrics
+lpips
+torchmetrics>=1.0.0
+
+# Image processing
+Pillow>=9.0.0
+opencv-python-headless>=4.7.0
+
+# RAG / knowledge base
+chromadb>=0.4.0
+sentence-transformers>=2.2.0
+
+# LLM
+openai>=1.0.0
+
+# Utilities
+tqdm>=4.65.0
+huggingface-hub>=0.16.0
+matplotlib>=3.7.0
+safetensors>=0.3.0
