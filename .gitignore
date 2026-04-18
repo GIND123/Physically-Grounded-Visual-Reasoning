@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets — never commit these
+.env
+*.env
+secrets.json
+
+# Data — large files should not be in git
+datasets/
+*.tar.xz
+*.tar.gz
+*.zip
+
+# Model checkpoints — push to HuggingFace Hub instead
+checkpoints/
+*.pth
+*.pt
+*.safetensors
+*.bin
+
+# Outputs
+synthetic_outputs/
+stage2_outputs/
+stage3_results/
+training_triplets/
+results/
+
+# Jupyter artifacts
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
