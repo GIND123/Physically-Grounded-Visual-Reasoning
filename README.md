@@ -230,17 +230,6 @@ python main.py --stage 1 --skip-lora --skip-controlnet-val   # only re-index fea
 python main.py --stage 3 --no-lpips                           # skip LPIPS computation
 ```
 
-### Runtime Estimates (A100 GPU)
-
-| Stage | Operation | Approximate Time |
-|---|---|---|
-| 1 | LoRA fine-tuning (all 15 categories) | 4-6 hours |
-| 1 | DINOv2 feature extraction + FAISS index | ~30 min |
-| 2 | Hypothesis generation via GPT-4o | ~1 hour |
-| 2 | Defect synthesis + 5-stage verification | 3-5 hours |
-| 3 | Metrics, figures, and LaTeX export | ~20 min |
-
----
 
 ## Dependencies
 
