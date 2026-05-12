@@ -2,64 +2,60 @@
 
 > Bridging manufacturing domain knowledge and vision-language models to synthesize physically plausible defect data for industrial quality inspection.
 
-Anomaly detection in industrial settings is bottlenecked by the scarcity of labeled defect samples. This project introduces a physically-grounded reasoning pipeline that leverages large language models (LLMs) — conditioned on materials science and manufacturing process knowledge — to generate structured defect hypotheses. These hypotheses drive diffusion-based synthetic image generation, augmenting training data in a semantically meaningful way. A counterfactual verification mechanism assesses hypothesis quality by predicting visual outcomes under corrective process interventions. The full system is evaluated on the MVTec Anomaly Detection benchmark across 15 product categories.
+Anomaly detection in industrial settings is bottlenecked by the scarcity of labeled defect samples. This project introduces a physically-grounded reasoning pipeline that uses GPT-4o vision conditioned on materials science and manufacturing process knowledge to generate structured defect hypotheses. These hypotheses drive diffusion-based synthetic image generation via LoRA-fine-tuned Stable Diffusion and ControlNet, augmenting training data with semantically meaningful defects. A 5-stage verification critic and counterfactual reasoning step validate each generated image before it enters the training set. The full system is evaluated on the MVTec Anomaly Detection benchmark across 15 product categories.
 
 ---
 
 ## Key Contributions
 
-- **Physics-grounded hypothesis generation** — LLMs reason over material properties, process parameters, and failure mechanisms rather than generating defects arbitrarily.
-- **Retrieval-Augmented Generation (RAG)** — Domain evidence from standard operating procedures and failure databases is retrieved at inference time to ground each hypothesis.
-- **Counterfactual reasoning** — Each defect hypothesis includes a counterfactual prediction: what the product would look like if the root-cause corrective action were applied, enabling causal validation.
-- **Operator-facing reports** — The pipeline generates structured inspection reports suitable for production floor use.
-- **Full MVTec AD coverage** — 15 product categories spanning metals, polymers, textiles, electronics, and organic materials.
+- **Physics-grounded hypothesis generation**: GPT-4o reasons over material properties, process parameters, and failure mechanisms retrieved from SOPs and FMEAs via RAG (ChromaDB), rather than generating defects arbitrarily.
+- **Structured synthesis pipeline**: Per-category LoRA adapters fine-tuned on SD2 Inpainting, guided by ControlNet Canny edges and SAM-generated defect masks, produce spatially precise synthetic defects.
+- **5-stage verification critic**: Each generated image must pass at least 4 of 5 independent checks (CLIP consistency, WinCLIP anomaly score, SSIM structure preservation, DINOv2 patch-level localization, pixel intensity) before being accepted into training.
+- **Counterfactual reasoning**: Each hypothesis predicts the visual outcome after the corrective action is applied, enabling causal validation of the generated defect.
+- **Operator-facing reports**: The pipeline generates structured 4-paragraph inspection reports suitable for production floor use.
 
 ---
 
-## Pipeline
+## Architecture
 
 ```
-┌─────────────────────────────────┐
-│  Defect Taxonomy + Process      │
-│  Context (material, mechanism,  │
-│  severity, process parameters)  │
-└────────────────┬────────────────┘
-                 │
-                 ▼
-┌─────────────────────────────────┐
-│  RAG Retrieval                  │
-│  (SOPs · Failure Databases)     │
-└────────────────┬────────────────┘
-                 │
-                 ▼
-┌─────────────────────────────────┐
-│  LLM Hypothesis Generation      │
-│  · Failure mechanism            │
-│  · Defect location + bbox       │
-│  · Severity classification      │
-│  · Corrective action            │
-│  · Counterfactual prediction    │
-└────────────────┬────────────────┘
-                 │
-                 ▼
-┌─────────────────────────────────┐
-│  Diffusion-based Synthetic      │
-│  Image Generation               │
-│  (hypothesis-conditioned)       │
-└────────────────┬────────────────┘
-                 │
-                 ▼
-┌─────────────────────────────────┐
-│  Anomaly Detection Training     │
-│  Real images + Synthetic        │
-│  augmentation (EfficientAD)     │
-└────────────────┬────────────────┘
-                 │
-                 ▼
-┌─────────────────────────────────┐
-│  Counterfactual Verification    │
-│  + Operator Inspection Report   │
-└─────────────────────────────────┘
++----------------------------------------------------------+
+|                    STAGE 1 - Foundation                  |
+|                                                          |
+|  MVTec AD  -->  DINOv2 triplet matching                  |
+|                     |                                    |
+|                     v                                    |
+|  SD2 Inpainting LoRA fine-tuning (per category)          |
+|  ControlNet (Canny) edge-conditioned validation          |
+|  DINOv2 feature extraction -> FAISS index                |
++-------------------------+--------------------------------+
+                          |
++-------------------------v--------------------------------+
+|                 STAGE 2 - Agentic Reasoning              |
+|                                                          |
+|  RAG KB (SOPs + FMEAs via ChromaDB)                      |
+|     |                                                    |
+|     v                                                    |
+|  GPT-4o Vision -> Structured Defect Hypothesis           |
+|  (mechanism, bbox, severity, corrective action)          |
+|     |                                                    |
+|     v                                                    |
+|  SAM mask generation + LoRA/ControlNet synthesis         |
+|     |                                                    |
+|     v                                                    |
+|  5-Stage Verification Critic                             |
+|  (CLIP, WinCLIP, SSIM, DINOv2, pixel diff)               |
+|     |                                                    |
+|     v                                                    |
+|  Counterfactual scoring + Operator report                |
++-------------------------+--------------------------------+
+                          |
++-------------------------v--------------------------------+
+|                  STAGE 3 - Evaluation                   |
+|                                                          |
+|  Pipeline metrics, LPIPS quality, AUROC (EfficientAD)   |
+|  qualitative grid, pass-rate plots    |                                 |
++----------------------------------------------------------+
 ```
 
 ---
@@ -86,31 +82,9 @@ Anomaly detection in industrial settings is bottlenecked by the scarcity of labe
 
 ---
 
-## Hypothesis Format
-
-Each hypothesis is a structured JSON object encoding physical reasoning about the defect:
-
-```json
-{
-  "observed_anomaly_cues": ["..."],
-  "failure_mechanism": "One-sentence physical root cause",
-  "mechanism_explanation": "Why this mechanism produces this defect on this material",
-  "defect_region": "Natural language location on the object",
-  "defect_bbox_normalized": [x_min, y_min, x_max, y_max],
-  "severity": "minor | moderate | critical",
-  "severity_visual_description": "How severity visually manifests",
-  "defect_class_token": "snake_case_token_for_diffusion_conditioning",
-  "confidence": 0.0,
-  "corrective_action": "Specific process intervention",
-  "counterfactual_prediction": "Expected visual outcome after correction"
-}
-```
-
----
-
 ## Experimental Results
 
-### Image-Level AUROC — Real vs. Real + Synthetic (EfficientAD)
+### Image-Level AUROC: Real vs. Real + Synthetic (EfficientAD)
 
 | Category | Baseline (Real Only) | Augmented (+ Synthetic) |
 |---|---|---|
@@ -118,7 +92,7 @@ Each hypothesis is a structured JSON object encoding physical reasoning about th
 | Metal Nut | 0.9848 | 0.9800 |
 | Transistor | 0.9396 | 0.9417 |
 
-### Ablation Study — Image AUROC
+### Ablation Study: Image AUROC
 
 | Category | No Augmentation | Full Pipeline | w/o Critic | Random Placement |
 |---|---|---|---|---|
@@ -128,7 +102,7 @@ Each hypothesis is a structured JSON object encoding physical reasoning about th
 
 ### Counterfactual Defect Suppression
 
-| Category | Defect Type | Corrective Action Applied | Suppressed |
+| Category | Defect Type | Corrective Action | Suppressed |
 |---|---|---|---|
 | Metal Nut | color | Reduce process temperature | Yes |
 | Bottle | contamination | Improve cleanroom filtration | Yes |
@@ -141,44 +115,147 @@ Each hypothesis is a structured JSON object encoding physical reasoning about th
 ## Repository Structure
 
 ```
-├── stage_1.ipynb          # End-to-end pipeline notebook
+├── main.py                        # CLI entry point
+├── requirements.txt
+│
+├── config/
+│   └── settings.py                # Central config: paths, hyperparameters, model IDs
+│
 ├── configs/
-│   ├── defect_taxonomy.json      # Material + mechanism definitions (15 categories)
-│   ├── hypothesis/               # Generated hypotheses per defect type
-│   ├── process_context/          # Per-category manufacturing parameters
-│   └── prompt_templates/         # LLM prompt templates (hypothesis, counterfactual, RAG, report)
-├── datasets/                     # Dataset metadata and statistics
-└── results/                      # AUROC evaluations, ablations, verification scores
+│   ├── defect_taxonomy.json       # Material + mechanism definitions (15 categories)
+│   ├── hypothesis/                # Pre-generated GPT-4o hypotheses per defect type
+│   ├── process_context/           # Manufacturing process parameters per category
+│   └── prompt_templates/          # LLM prompt templates
+│
+├── pipeline/
+│   ├── stage1.py                  # LoRA training, ControlNet validation, DINOv2 indexing
+│   ├── stage2.py                  # Hypothesis generation, synthesis, verification, reports
+│   └── stage3.py                  # Evaluation metrics, figures, LaTeX tables
+│
+├── synthesis/
+│   ├── generator.py               # LoRA + ControlNet defect image synthesis
+│   ├── llm.py                     # GPT-4o vision hypothesis agent
+│   ├── mask_gen.py                # SAM-based defect mask generation
+│   └── rag.py                     # ChromaDB knowledge base (SOPs + FMEAs)
+│
+├── verification/
+│   └── critic.py                  # 5-stage verification critic
+│
+├── models/
+│   ├── lora.py                    # SD2 Inpainting LoRA fine-tuning
+│   ├── controlnet.py              # ControlNet Canny edge conditioning
+│   └── sam_mask.py                # SAM mask utilities
+│
+├── features/
+│   └── extraction.py              # DINOv2 feature extraction + FAISS indexing
+│
+├── evaluation/
+│   └── metrics.py                 # AUROC, LPIPS, pipeline metrics
+│
+├── data/
+│   ├── dataset.py                 # MVTec AD dataset loader
+│   └── paths.py                   # Path helpers
+│
+├── utils/
+│   └── image.py                   # Image processing utilities
+│
+├── datasets/                      # Dataset metadata and statistics
+└── results/                       # AUROC evaluations, ablations, verification scores
 ```
 
 ---
 
-## Getting Started
+## How to Run
 
 ### Requirements
 
 - Python 3.9+
-- CUDA-capable GPU
+- CUDA GPU (A100 recommended; 24 GB VRAM minimum for LoRA training)
 - [MVTec AD dataset](https://www.mvtec.com/company/research/datasets/mvtec-ad)
+- OpenAI API key (required for Stage 2 hypothesis generation)
+- HuggingFace token (for model weight downloads)
 
-### Setup
+### 1. Clone and Install
 
-```bash 
+```bash
 git clone https://github.com/GIND123/Physically-Grounded-Visual-Reasoning.git
 cd Physically-Grounded-Visual-Reasoning
 pip install -r requirements.txt
 ```
 
-### Usage
+### 2. Download the SAM Checkpoint
 
-Open `stage_1.ipynb` and configure the path to your local MVTec AD directory. The notebook runs the full pipeline end-to-end:
+```bash
+mkdir -p checkpoints
+wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth \
+     -O checkpoints/sam_vit_h_4b8939.pth
+```
 
-1. Load defect taxonomy and manufacturing process context
-2. Build RAG index from domain knowledge sources
-3. Generate per-defect LLM hypotheses
-4. Synthesize defect images via diffusion conditioning
-5. Train and evaluate anomaly detection model
-6. Run counterfactual verification
-7. Generate operator inspection reports
+### 3. Set Environment Variables
+
+```bash
+export PROJECT_ROOT=/path/to/project    # project root (default: /root/project)
+export OPENAI_API_KEY=sk-...            # required for Stage 2
+export HF_TOKEN=hf_...                  # required for model downloads
+```
+
+Place the MVTec AD dataset at `$PROJECT_ROOT/datasets/mvtec_ad/`, or update `MVTEC` in `config/settings.py`.
+
+### 4. Run the Pipeline
+
+**Full pipeline (all 3 stages, all 15 categories):**
+
+```bash
+python main.py --stage all
+```
+
+**Individual stages:**
+
+```bash
+python main.py --stage 1                            # Foundation: LoRA, ControlNet, DINOv2
+python main.py --stage 2 --openai-key sk-...        # Reasoning: hypotheses, synthesis, verification
+python main.py --stage 3                            # Evaluation: metrics, figures, LaTeX tables
+```
+
+**Subset of categories:**
+
+```bash
+python main.py --stage all --categories bottle metal_nut transistor
+```
+
+**Skip expensive steps:**
+
+```bash
+python main.py --stage 1 --skip-lora --skip-controlnet-val   # only re-index features
+python main.py --stage 3 --no-lpips                           # skip LPIPS computation
+```
+
+### Runtime Estimates (A100 GPU)
+
+| Stage | Operation | Approximate Time |
+|---|---|---|
+| 1 | LoRA fine-tuning (all 15 categories) | 4-6 hours |
+| 1 | DINOv2 feature extraction + FAISS index | ~30 min |
+| 2 | Hypothesis generation via GPT-4o | ~1 hour |
+| 2 | Defect synthesis + 5-stage verification | 3-5 hours |
+| 3 | Metrics, figures, and LaTeX export | ~20 min |
 
 ---
+
+## Dependencies
+
+Key packages (see `requirements.txt` for full list):
+
+| Package | Purpose |
+|---|---|
+| `diffusers` + `peft` | SD2 Inpainting + LoRA fine-tuning |
+| `controlnet-aux` | Canny edge conditioning |
+| `segment-anything` | SAM mask generation |
+| `openai` | GPT-4o hypothesis generation |
+| `chromadb` + `sentence-transformers` | RAG knowledge base |
+| `open-clip-torch` | CLIP verification stage |
+| `faiss-cpu` | DINOv2 feature indexing |
+| `lpips` | Generation quality metric |
+
+---
+
